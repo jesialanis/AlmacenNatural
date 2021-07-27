@@ -1,0 +1,505 @@
+html{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 16px;   
+}
+
+.body{
+    margin: 0%;
+}
+
+/*H E A D E R*/
+header{
+    background-color: #D9B4B4;
+    width: 100%;
+
+}
+
+/*LOGO Y ELEMENTOS DE LA BARRA DE NAVEGACION*/
+.contenedorLogoYelementos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;  
+    
+}
+
+.contenedorLogo{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.logo{
+    margin: 10px;
+    border-radius: 200px;
+    width: 60%;
+}
+
+/*BOOTSTRAP NAV*/
+
+.navbar navbar-expand-lg navbar-light bg-light{
+    padding: 0px;
+}
+
+.container-fluid {
+    font-family: 'Roboto', sans-serif; 
+    color: black;
+    font-size: 16px; 
+    background-color:#D9B4B4;
+
+}
+
+.nav nav-pills nav-justified a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    
+}
+
+
+/*ESTILO BARRA DE NAVEGACION INICIAL*/
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    margin: 10px;
+    padding: 10px;
+    border: 20px;
+}   
+
+.menu{
+    list-style: none;
+    text-align: right;
+}
+
+.menu li{
+    display: inline-block;
+    margin: 10px;
+    padding: 3px;
+
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+/*SECCION PRINCIPAL INDEX*/
+
+.seccionProductos{
+    background-color: #f5f2f1;
+    padding-top: 16px;
+    height: 200%;
+    
+    
+}
+
+.titulosSecciones{
+    color: black;
+    font-size: 40px;
+    letter-spacing: 4px ;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    height: 100px;
+
+}
+
+.contenedorProductos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    flex-flow: wrap;
+    padding-bottom: 20px;
+
+
+}
+.categoriaProductos img{
+    width: 17rem;    
+    border-radius: 20px;
+            
+}
+
+/*FOOTER*/
+
+.flexContainerFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#D9B4B4;
+    width: 100%;
+    margin-top: 0%px;
+    padding: 20px;
+    clear: both;
+
+}
+
+.seguinosRedes{
+    letter-spacing: 4px ;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+
+}
+
+.redes img{
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    
+}
+
+/*SECCION CONTACTO*/
+
+.seccionPrincipalContacto{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f5f2f1;
+    padding: 16px;
+   
+}
+
+.contenedorFormulario{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 30px;
+    background-color: #f5f2f1;
+    width: 300px;
+    border: solid black 1px;
+    
+}
+
+#legendContactanos{
+    font-size: 30px;
+    letter-spacing: 4px ;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+}
+.contenedorCampos{
+    display: flex;
+    flex-direction: column;
+
+}
+.contenedorBotones{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contenedorSucursales{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: #f5f2f1;
+    
+}
+
+.contenedorSucursales h3{
+    font-size: 30px;
+    letter-spacing: 4px ;
+    font-family: 'Teko', sans-serif;
+
+}
+
+/*SECCION PRODUCTOS*/
+.clasificacionProductos{
+    background-color: #f5f2f1;
+    padding: 16px;
+    width: 100%;
+}
+
+
+.listasCategorias ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5rem;
+    
+}
+
+.listasCategorias li{
+    list-style-type: none;
+
+}
+.listasCategorias a{
+    text-decoration: none;
+    color: black;
+}
+
+.contenedorDestacados{
+    height: 20rem;
+
+}
+
+.tituloDestacados{
+    font-size: 30px;
+    letter-spacing: 2px ;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+}
+
+.productosDestacados{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.imagenDestacados{
+    background-color: #8B8391;
+    width: 10rem;
+    height: 10rem;
+    margin: 10px;
+
+}
+/*COMPRAS Y ENVIOS*/
+.contenedorCompraYenvios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5rem;
+    
+    
+}
+  
+
+.compraYenvio a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 2px ;
+    font-family: 'Teko', sans-serif;
+    padding: 20px;
+}
+
+/*SECCION SOBRE NOSOTROS*/
+.seccionPrincipalNosotros{
+    background-color: #f5f2f1;
+    padding: 16px;
+    width: 100%;
+}
+
+.somosUnaTiendaTitulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.somosUnaTiendaTitulo p{
+    font-size: 20px;
+    
+}
+
+.somosUnaTiendaParrafo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    letter-spacing: 2px;
+    height: 20rem;
+    
+}
+
+.contenedorInformativoSalud{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 5rem;
+    
+}
+
+.informativo a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 2px ;
+    font-family: 'Teko', sans-serif;
+    padding: 20px;
+   
+
+}
+/*M E D I A*/
+
+@media (max-width: 575.98px) {
+
+    .header{
+        padding: 10px;
+        
+    }
+    .contenedorLogo{
+        justify-content: center;
+    }
+
+    .navegacion {
+        flex-direction: column;
+        flex-wrap: wrap;
+
+
+        }
+
+        .menu li{
+            display: block;
+            margin:0px;
+            padding: 3px
+        }
+
+    .seccionProductos{
+        padding-top: 16px;
+        padding-bottom: 0px;;
+        padding-left: 0px;
+        padding-right: 0px;
+        
+        
+    }
+     .contenedorProductos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .categoriaProductos img{
+        width: 12rem;    
+        
+    }
+
+    .contenedorDestacados{
+        height: fit-content;
+    
+    }
+
+    .seccionPrincipalContacto{
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%
+    }
+
+        
+    .flexContainerFooter{
+        width: 100%;
+    }
+
+    
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .header{
+        width: 300%
+    }
+    .contenedorLogo{
+        justify-content: center;
+    }
+
+    .navegacion {
+        flex-direction: column;
+        flex-wrap: wrap;
+
+
+        }
+
+        .menu li{
+            display: block;
+            margin:0px;
+            padding: 3px
+        }
+
+    .seccionProductos{
+        padding-top: 16px;
+        padding-bottom: 0px;;
+        padding-left: 0px;
+        padding-right: 0px;
+        
+        
+    }
+     .contenedorProductos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .categoriaProductos img{
+        width: 12rem;    
+        
+    }
+
+    .contenedorDestacados{
+        height: fit-content;
+    
+    }
+
+
+    
+ }
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .header{
+        width: fit-content;
+    }
+    .contenedorLogo{
+        justify-content: center;
+    }
+
+    .navegacion {
+        flex-direction: column;
+        flex-wrap: wrap;
+
+
+        }
+
+        .menu li{
+            display: block;
+            margin:0px;
+            padding: 3px
+        }
+
+    .seccionProductos{
+        padding-top: 16px;
+        padding-bottom: 0px;;
+        padding-left: 0px;
+        padding-right: 0px;
+        
+        
+    }
+     
+
+    .contenedorDestacados{
+        height: fit-content;
+    
+    }
+    
+    .seccionProductos{
+        padding-top: 16px;
+        padding-bottom: 0px;;
+        padding-left: 0px;
+        padding-right: 0px;
+        
+        
+    }
+     .contenedorProductos{
+        
+        align-items: center;
+    }
+
+    .categoriaProductos img{
+        width: 12rem;    
+        
+    }
+
+    .contenedorDestacados{
+        height: fit-content;
+    
+    }
+
+
+
+ }
+

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/style.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +17,7 @@
     <title>ARBOL DE TE</title>
 </head>
 <body>
-  <header>
+  <header class="header__menu">
     <div class="contenedorLogoYelementos">
         <!-- LOGO DE LA EMPRESA Y ELEMENTOS DE LA BARRA DE NAV  -->
         <div class="contenedorLogo">
@@ -69,7 +70,7 @@
     </div>
 </header>
         <!-- CATEGORIAS PRODUCTOS-->
-  <section class="clasificacionProductos">
+  <section class="section__productos">
     <div class="contenedorCategorias">
       <h2 class="titulosSecciones">CATEGORIAS PRINCIPALES</h2>
       <div class="listasCategorias">
@@ -81,26 +82,50 @@
       </div>
     </div>
     <div class="contenedorDestacados">
-      <h2 class=tituloDestacados>DESTACADOS</h2>
+      <h3 class=tituloDestacados>DESTACADOS</h3>
       <div class="productosDestacados">
-        <div class="imagenDestacados">
-          <p> img 1</p>
-        </div>
-        <div class="imagenDestacados">
-          <p> img 2</p>
-        </div>
-        <div class="imagenDestacados">
-          <p> img 3</p>
-        </div>
-        <div class="imagenDestacados">
-          <p> img 4</p>
-        </div>
-        <div class="imagenDestacados">
-          <p> img 5</p>
-        </div>
-        <div class="imagenDestacados">
-          <p> img 6</p>
-        </div>      
+        <div class="card" style="width: 18rem;">
+          <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/209/218/products/sinaz1-77359f07699adffa1a16241357192502-640-0.png" class="card-img-top" alt="imgleche">
+          <div class="card-body">
+            <h5 class="card-title">Leche de almendras</h5>
+            <a href="#" class="btn btn-primary">comprar</a>
+          </div>
+        </div> 
+        <div class="card" style="width: 18rem;">
+          <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/209/218/products/124835175_3641185655938370_2640104668614933564_n11-6e67d1bfd375bdf78e16240587750822-640-0.jpg" class="card-img-top" alt="imgharina">
+          <div class="card-body">
+            <h5 class="card-title">Harina de coco</h5>
+            <a href="#" class="btn btn-primary">comprar</a>
+          </div>
+        </div> 
+        <div class="card" style="width: 18rem;">
+          <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/209/218/products/oliven21-8de43c827c1e94b94a16137640383543-640-01-24cb4fbe00d762190a16240565116190-640-0.png" class="card-img-top" alt="imgshampoo">
+          <div class="card-body">
+            <h5 class="card-title">Shampoo sólido</h5>
+            <a href="#" class="btn btn-primary">comprar</a>
+          </div>
+        </div> 
+        <div class="card" style="width: 18rem;">
+          <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/209/218/products/11515155922-111-c312685c6a11d70de116240734102682-640-0.png" class="card-img-top" alt="azucarmasc">
+          <div class="card-body">
+            <h5 class="card-title">Azucar mascabo</h5>
+            <a href="#" class="btn btn-primary">comprar</a>
+          </div>
+        </div> 
+        <div class="card" style="width: 18rem;">
+          <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/209/218/products/diseno-sin-titulo-41-e27252379cbe7871db15928213957163-640-0.jpg" class="card-img-top" alt="imgvitaminas">
+          <div class="card-body">
+            <h5 class="card-title">Vitaminas</h5>
+            <a href="#" class="btn btn-primary">comprar</a>
+          </div>
+        </div> 
+        <div class="card" style="width: 18rem;">
+          <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/209/218/products/rosa-mosqueta_pack-y-producto1-88fb456c2adb52b07115912996553945-1024-10241-a2766bc211c45e92e016181001572109-640-0.jpg" class="card-img-top" alt="imgaceite">
+          <div class="card-body">
+            <h5 class="card-title">Aceite de Rosa mosqueta</h5>
+            <a href="#" class="btn btn-primary">comprar</a>
+          </div>
+        </div>    
       </div>
     </div>
     <!-- COMO COMPRAR Y ENVIO -->

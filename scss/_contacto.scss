@@ -1,0 +1,54 @@
+.section__contacto{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f5f2f1;
+    padding: 16px;
+    
+    .contenedorFormulario{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: 30px;
+        background-color: #f5f2f1;
+        width: 300px;
+        border: solid black 1px;
+        
+        #legendContactanos{
+            font-size: 30px;
+            letter-spacing: 4px ;
+            font-family: 'Teko', sans-serif;
+            text-align: center;
+        }
+
+        .contenedorCampos{
+            display: flex;
+            flex-direction: column;
+        
+        }
+        .contenedorBotones{
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        
+    }
+
+    .contenedorSucursales{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        background-color: #f5f2f1;
+        
+        h3{
+            font-size: 30px;
+            letter-spacing: 4px ;
+            font-family: 'Teko', sans-serif;
+        
+        }
+    }
+
+
+}

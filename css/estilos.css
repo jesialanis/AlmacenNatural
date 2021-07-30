@@ -1,89 +1,14 @@
 html{
     font-family: 'Roboto', sans-serif; 
-    font-size: 16px;   
+    font-size: 16px;
+  
 }
 
 .body{
     margin: 0%;
 }
 
-/*H E A D E R*/
-header{
-    background-color: #D9B4B4;
-    width: 100%;
 
-}
-
-/*LOGO Y ELEMENTOS DE LA BARRA DE NAVEGACION*/
-.contenedorLogoYelementos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;  
-    
-}
-
-.contenedorLogo{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-}
-
-.logo{
-    margin: 10px;
-    border-radius: 200px;
-    width: 60%;
-}
-
-/*BOOTSTRAP NAV*/
-
-.navbar navbar-expand-lg navbar-light bg-light{
-    padding: 0px;
-}
-
-.container-fluid {
-    font-family: 'Roboto', sans-serif; 
-    color: black;
-    font-size: 16px; 
-    background-color:#D9B4B4;
-
-}
-
-.nav nav-pills nav-justified a{
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    
-}
-
-
-/*ESTILO BARRA DE NAVEGACION INICIAL*/
-.navegacion{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    margin: 10px;
-    padding: 10px;
-    border: 20px;
-}   
-
-.menu{
-    list-style: none;
-    text-align: right;
-}
-
-.menu li{
-    display: inline-block;
-    margin: 10px;
-    padding: 3px;
-
-}
-
-.menu a{
-    text-decoration: none;
-    color: black;
-}
 
 /*SECCION PRINCIPAL INDEX*/
 
@@ -105,6 +30,16 @@ header{
 
 }
 
+.listasCategorias a{
+    
+   
+    transition: background-color .5s;
+}
+  
+.listasCategorias a:hover {
+    background-color: rgba(223, 169, 213, 0.658);
+}
+
 .contenedorProductos{
     display: flex;
     flex-direction: row;
@@ -121,146 +56,9 @@ header{
             
 }
 
-/*FOOTER*/
-
-.flexContainerFooter{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color:#D9B4B4;
-    width: 100%;
-    margin-top: 0%px;
-    padding: 20px;
-    clear: both;
-
-}
-
-.seguinosRedes{
-    letter-spacing: 4px ;
-    font-family: 'Teko', sans-serif;
-    text-align: center;
-
-}
-
-.redes img{
-    padding: 10px;
-    width: 40px;
-    height: 40px;
-    
-}
-
-/*SECCION CONTACTO*/
-
-.seccionPrincipalContacto{
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #f5f2f1;
-    padding: 16px;
-   
-}
-
-.contenedorFormulario{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin: 30px;
-    background-color: #f5f2f1;
-    width: 300px;
-    border: solid black 1px;
-    
-}
-
-#legendContactanos{
-    font-size: 30px;
-    letter-spacing: 4px ;
-    font-family: 'Teko', sans-serif;
-    text-align: center;
-}
-.contenedorCampos{
-    display: flex;
-    flex-direction: column;
-
-}
-.contenedorBotones{
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.contenedorSucursales{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    background-color: #f5f2f1;
-    
-}
-
-.contenedorSucursales h3{
-    font-size: 30px;
-    letter-spacing: 4px ;
-    font-family: 'Teko', sans-serif;
-
-}
-
-/*SECCION PRODUCTOS*/
-.clasificacionProductos{
-    background-color: #f5f2f1;
-    padding: 16px;
-    width: 100%;
-}
 
 
-.listasCategorias ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 5rem;
-    
-}
-
-.listasCategorias li{
-    list-style-type: none;
-
-}
-.listasCategorias a{
-    text-decoration: none;
-    color: black;
-}
-
-.contenedorDestacados{
-    height: 20rem;
-
-}
-
-.tituloDestacados{
-    font-size: 30px;
-    letter-spacing: 2px ;
-    font-family: 'Teko', sans-serif;
-    text-align: center;
-}
-
-.productosDestacados{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
-
-}
-
-.imagenDestacados{
-    background-color: #8B8391;
-    width: 10rem;
-    height: 10rem;
-    margin: 10px;
-
-}
-/*COMPRAS Y ENVIOS*/
+/*COMPRAS Y ENVIOS DE SECCION PRODUCTOS*/
 .contenedorCompraYenvios{
     display: flex;
     flex-direction: row;

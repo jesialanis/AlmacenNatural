@@ -1,0 +1,47 @@
+.header__menu{
+    background-color: #D9B4B4;
+    width: 100%;
+
+    .contenedorLogoYelementos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;  
+        
+        .contenedorLogo{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+           
+            .logo{
+                margin: 10px;
+                border-radius: 200px;
+                width: 60%;
+            }
+        }
+
+        .navbar navbar-expand-lg navbar-light bg-light{
+            padding: 0px;
+            
+            
+            .container-fluid {
+                font-family: 'Roboto', sans-serif; 
+                color: black;
+                font-size: 16px; 
+                background-color:#D9B4B4;
+            
+                .nav nav-pills nav-justified a{
+                    text-decoration: none;
+                    color: black;
+                    font-size: 16px;
+                   
+                }
+                
+            }
+        } 
+        .bg-light {
+            background-color: #D9B4B4!important;   
+        }
+
+    }
+}

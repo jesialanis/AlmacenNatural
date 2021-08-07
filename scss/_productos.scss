@@ -3,6 +3,20 @@
     padding-top: 16px;
     width: 100%;
     
+    .titulosSecciones{
+
+        color: black;
+        font-size: 40px;
+        letter-spacing: 4px ;
+        font-family: 'Teko', sans-serif;
+        text-align: center;
+        height: 100px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        
+    
+    }
+
     .listasCategorias{
        
         padding-bottom: 20px;
@@ -37,9 +51,11 @@
  
     }
     .contenedorDestacados{
+
         height: fit-content;
             
         .tituloDestacados{
+
             font-size: 28px;
             letter-spacing: 2px ;
             font-family: $fuente-barra!important;
@@ -52,6 +68,7 @@
         }
      
         .productosDestacados{
+            
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -59,6 +76,7 @@
             width: 100%;
         
             .card{
+
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -71,26 +89,55 @@
 
                 
                 img:hover{
+
                     filter: grayscale(60%);
                 }
+
                 .card-body{
+
                     display: flex;
                     flex-direction: column;
                     align-items: center;
 
                     h5{
+
                     font-family: $fuente-barra!important;;
                     color: #000000;
                     font-size: 15px;
                     }
 
                     .btn-primary {
+
                     background-color:  #f5f2f1 !important;
                     border: solid #AC888A;
                     color: black;
                     }
                 }
             }
+        }
+    }
+
+    .contenedorCompraYenvios{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 6rem;
+        background-color: #AC888A;
+
+
+        .compraYenvio{
+
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                letter-spacing: 2px ;
+                font-family: 'Teko', sans-serif;
+
+            }
+            
         }
     }
 }

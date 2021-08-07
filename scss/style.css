@@ -1,3 +1,12 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+.body {
+  margin: 0%;
+}
+
 .header__menu {
   background-color: #dbc4c4;
   width: 100%;
@@ -112,6 +121,86 @@
   height: 40px;
 }
 
+.seccionProductosIndex {
+  background-color: #f5f2f1;
+  padding-top: 16px;
+}
+
+.seccionProductosIndex .titulosSecciones {
+  color: black;
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-family: 'Teko', sans-serif;
+  text-align: center;
+  height: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.seccionProductosIndex .contenedorProductos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.seccionProductosIndex .contenedorProductos .categoriaProductos img {
+  width: 17rem;
+  border-radius: 20px;
+  -webkit-transition: all .9s ease;
+  /* Safari y Chrome */
+  -moz-transition: all .9s ease;
+  /* Firefox */
+  -o-transition: all .9s ease;
+  /* IE 9 */
+  -ms-transition: all .9s ease;
+  /* Opera */
+}
+
+.seccionProductosIndex .contenedorProductos .categoriaProductos img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.seccionProductosIndex .contenedorCompraYenvios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 6rem;
+  background-color: #AC888A;
+}
+
+.seccionProductosIndex .contenedorCompraYenvios .compraYenvio a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: 'Teko', sans-serif;
+}
+
 .section__contacto {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,6 +216,17 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: #f5f2f1;
+}
+
+.section__contacto .titulosSecciones {
+  color: black;
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-family: 'Teko', sans-serif;
+  text-align: center;
+  height: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .section__contacto .contenedorFormulario {
@@ -232,6 +332,17 @@
   background-color: #f5f2f1;
   padding-top: 16px;
   width: 100%;
+}
+
+.section__productos .titulosSecciones {
+  color: black;
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-family: 'Teko', sans-serif;
+  text-align: center;
+  height: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .section__productos .listasCategorias {
@@ -352,38 +463,33 @@
   color: black;
 }
 
+.section__productos .contenedorCompraYenvios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 6rem;
+  background-color: #AC888A;
+}
+
+.section__productos .contenedorCompraYenvios .compraYenvio a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: 'Teko', sans-serif;
+}
+
 @media (max-width: 575.98px) {
-  .header__menu .contenedorLogoYelementos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .header__menu .contenedorLogoYelementos .contenedorLogo {
-    border-radius: 100%;
-    width: 30%;
-  }
-  .header__menu .contenedorLogoYelementos .navbar {
-    font-size: 10px;
-  }
-  .header__menu .contenedorLogoYelementos .navbar .li {
-    margin: 0px;
-    font-size: small;
-  }
-  .header__menu .contenedorLogoYelementos .navbar .form-control {
-    display: none;
-  }
-  .header__menu .contenedorLogoYelementos .navbar .btn {
-    display: none;
-  }
   .titulosSecciones {
     font-size: 30px;
     letter-spacing: 3px;
@@ -413,37 +519,6 @@
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .header__menu .contenedorLogoYelementos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .header__menu .contenedorLogoYelementos .contenedorLogo {
-    border-radius: 100%;
-    width: 30%;
-  }
-  .header__menu .contenedorLogoYelementos .navbar {
-    font-size: 10px;
-  }
-  .header__menu .contenedorLogoYelementos .navbar .li {
-    margin: 0px;
-    font-size: small;
-  }
-  .header__menu .contenedorLogoYelementos .navbar .form-control {
-    display: none;
-  }
-  .header__menu .contenedorLogoYelementos .navbar .btn {
-    display: none;
-  }
   .titulosSecciones {
     font-size: 30px;
     letter-spacing: 3px;
@@ -488,5 +563,93 @@
     letter-spacing: 2px;
     font-family: 'Teko', sans-serif;
   }
+}
+
+.seccionPrincipalNosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f2f1;
+  padding-top: 16px;
+  width: 100%;
+}
+
+.seccionPrincipalNosotros .titulosSecciones {
+  color: black;
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-family: 'Teko', sans-serif;
+  text-align: center;
+  height: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.seccionPrincipalNosotros .somosUnaTienda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  width: 65%;
+}
+
+.seccionPrincipalNosotros .somosUnaTienda p {
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  text-align: center;
+  -webkit-transition: all .9s ease;
+  /* Safari y Chrome */
+  -moz-transition: all .9s ease;
+  /* Firefox */
+  -o-transition: all .9s ease;
+  /* IE 9 */
+  -ms-transition: all .9s ease;
+  /* Opera */
+}
+
+.seccionPrincipalNosotros .somosUnaTienda p:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.seccionPrincipalNosotros .contenedorInformativoSalud {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 5rem;
+  background-color: #AC888A;
+  width: 100%;
+}
+
+.seccionPrincipalNosotros .contenedorInformativoSalud .informativo a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: 'Teko', sans-serif;
+  padding: 20px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,91 @@
+.seccionPrincipalNosotros{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f2f1;
+    padding-top: 16px;
+    width: 100%;
+    
+
+    .titulosSecciones{
+
+        color: black;
+        font-size: 40px;
+        letter-spacing: 4px ;
+        font-family: 'Teko', sans-serif;
+        text-align: center;
+        height: 100px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        
+    
+    }
+  
+    .somosUnaTienda{
+
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 65%;
+        
+        p{
+
+            font-size: 18px;
+            letter-spacing: 2px;
+            color: black;
+            margin-top: 20px;
+            margin-bottom: 60px;
+            text-align: center;
+            -webkit-transition:all .9s ease; /* Safari y Chrome */
+            -moz-transition:all .9s ease; /* Firefox */
+            -o-transition:all .9s ease; /* IE 9 */
+            -ms-transition:all .9s ease; /* Opera */
+        
+                        
+        }
+        
+        p:hover{
+
+            -webkit-transform:scale(1.05);
+            -moz-transform:scale(1.05);
+            -ms-transform:scale(1.05);
+            -o-transform:scale(1.05);
+            transform:scale(1.05);
+        }
+    }
+ 
+    .contenedorInformativoSalud{
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 5rem;
+        background-color:  #AC888A;
+        width: 100%;
+
+
+        .informativo{
+            
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                letter-spacing: 2px ;
+                font-family: 'Teko', sans-serif;
+                padding: 20px;
+               
+            }
+        }
+        
+       
+    }
+
+        
+        
+    
+
+
+}
+

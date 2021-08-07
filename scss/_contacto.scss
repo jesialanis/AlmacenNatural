@@ -5,6 +5,22 @@
     align-items: center;
     background-color: #f5f2f1;
 
+    .titulosSecciones{
+
+        color: black;
+        font-size: 40px;
+        letter-spacing: 4px ;
+        font-family: 'Teko', sans-serif;
+        text-align: center;
+        height: 100px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        
+    
+    }
+
+
+
     
     .contenedorFormulario{
         display: flex;

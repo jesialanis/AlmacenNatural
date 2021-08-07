@@ -1,6 +1,7 @@
 .header__menu{
-    background-color: #D9B4B4;
+    background-color: #dbc4c4;
     width: 100%;
+    border-bottom: solid 2px #AC888A;
 
     .contenedorLogoYelementos{
         display: flex;
@@ -12,36 +13,70 @@
             display: flex;
             flex-direction: row;
             align-items: flex-start;
-           
+
             .logo{
                 margin: 10px;
-                border-radius: 200px;
+                border-radius: 100px;
                 width: 60%;
-            }
-        }
-
-        .navbar navbar-expand-lg navbar-light bg-light{
-            padding: 0px;
-            
-            
-            .container-fluid {
-                font-family: 'Roboto', sans-serif; 
-                color: black;
-                font-size: 16px; 
-                background-color:#D9B4B4;
-            
-                .nav nav-pills nav-justified a{
-                    text-decoration: none;
-                    color: black;
-                    font-size: 16px;
-                   
-                }
                 
             }
-        } 
-        .bg-light {
-            background-color: #D9B4B4!important;   
         }
 
+        .container-fluid{
+            background-color: #dbc4c4;
+    
+            .collapse navbar-collapse{
+                padding-right: 30px;
+               
+            
+            }
+
+            .nav-link{
+                font-family: $fuente-barra!important;
+                font-weight: bold;
+                
+            }
+
+            .dropdown-menu{
+                background-color: #f5f2f1 ;
+                
+
+                .dropdown-item{
+                background-color: #f5f2f1 ;
+                font-family: $fuente-barra!important;
+                font-weight: bold;
+                
+                }
+            }
+
+           .form-control{
+            font-family: $fuente-barra!important;
+            font-weight: bold;
+            
+           } 
+
+           .btn-outline-success{
+            background-color: #dbc4c4;
+            border-color: #AC888A;
+            color: black;
+            
+
+            .btn-outline-success:hover{
+                background-color: #dbc4c4;
+                border-color: #dbc4c4;
+                color: black;
+               }
+           } 
+
+           
+       
+    
+
+
     }
+
+
+    }
+   
+
 }

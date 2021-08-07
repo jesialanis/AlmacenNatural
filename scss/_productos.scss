@@ -1,9 +1,12 @@
 .section__productos{
     background-color: #f5f2f1;
-    padding: 16px;
+    padding-top: 16px;
     width: 100%;
-
+    
     .listasCategorias{
+       
+        padding-bottom: 20px;
+
 
         ul{
             display: flex;
@@ -11,13 +14,23 @@
             justify-content: space-evenly;
             align-items: center;
             height: 5rem;
+            
+
 
             li{
                 list-style-type: none;
-
-                a{
-                    text-decoration: none;
+                font-family: 'Teko', sans-serif;
+                        
+                
+                .btn-outline-secondary{
+                    background-color: #f5f2f1;
+                    border-color: #AC888A;
                     color: black;
+                    padding: 20px;
+                    font-size: 15px;
+                    letter-spacing: 4px;
+                    
+                 
                 }
             }
         }
@@ -25,13 +38,17 @@
     }
     .contenedorDestacados{
         height: fit-content;
-    
+            
         .tituloDestacados{
-            font-size: 30px;
+            font-size: 28px;
             letter-spacing: 2px ;
-            font-family: 'Teko', sans-serif;
+            font-family: $fuente-barra!important;
+            font-weight: bold;
             text-align: center;
-            color: #D9B4B4;
+            color: #AC888A;;
+            height: 6rem;
+            padding-top: 20px;
+            
         }
      
         .productosDestacados{
@@ -47,6 +64,7 @@
                 justify-content: center;
                 align-items: center;
                 font-family: 'Teko', sans-serif;
+                letter-spacing: 2px;
                 margin: 1rem;
                 background-color: #f5f2f1!important;
                 border-radius: 1%;
@@ -61,12 +79,15 @@
                     align-items: center;
 
                     h5{
-                    font-family: 'Teko', sans-serif;
-                    color: #D9B4B4;
+                    font-family: $fuente-barra!important;;
+                    color: #000000;
+                    font-size: 15px;
                     }
 
-                    .btn btn-primary{
-                    background-color: #8064A2 !important;
+                    .btn-primary {
+                    background-color:  #f5f2f1 !important;
+                    border: solid #AC888A;
+                    color: black;
                     }
                 }
             }

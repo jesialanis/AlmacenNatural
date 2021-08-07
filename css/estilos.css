@@ -1,121 +1,159 @@
 html{
+
     font-family: 'Roboto', sans-serif; 
-    font-size: 16px;
+    font-size: 15px;
   
 }
 
 .body{
+
     margin: 0%;
+    
+
 }
-
-
 
 /*SECCION PRINCIPAL INDEX*/
 
-.seccionProductos{
+.seccionProductosIndex{
+
     background-color: #f5f2f1;
     padding-top: 16px;
-    height: 200%;
     
-    
+       
 }
 
 .titulosSecciones{
+
     color: black;
     font-size: 40px;
     letter-spacing: 4px ;
     font-family: 'Teko', sans-serif;
     text-align: center;
     height: 100px;
-
-}
-
-.listasCategorias a{
+    padding-top: 25px;
+    padding-bottom: 25px;
     
-   
-    transition: background-color .5s;
+
 }
-  
-.listasCategorias a:hover {
-    background-color: rgba(223, 169, 213, 0.658);
-}
+
 
 .contenedorProductos{
+
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
+    align-content: stretch;
     flex-flow: wrap;
-    padding-bottom: 20px;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    
 
 
 }
 .categoriaProductos img{
+
     width: 17rem;    
     border-radius: 20px;
-            
+    -webkit-transition:all .9s ease; /* Safari y Chrome */
+    -moz-transition:all .9s ease; /* Firefox */
+    -o-transition:all .9s ease; /* IE 9 */
+    -ms-transition:all .9s ease; /* Opera */
+}
+.categoriaProductos img:hover {
+    -webkit-transform:scale(1.10);
+    -moz-transform:scale(1.10);
+    -ms-transform:scale(1.10);
+    -o-transform:scale(1.10);
+    transform:scale(1.10);
 }
 
 
 
 /*COMPRAS Y ENVIOS DE SECCION PRODUCTOS*/
+
 .contenedorCompraYenvios{
+    
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height: 5rem;
-    
-    
+    height: 6rem;
+    background-color: #AC888A;
+        
 }
-  
 
 .compraYenvio a{
+
     text-decoration: none;
     color: black;
     font-size: 20px;
     letter-spacing: 2px ;
     font-family: 'Teko', sans-serif;
-    padding: 20px;
+   
 }
+
 
 /*SECCION SOBRE NOSOTROS*/
+
 .seccionPrincipalNosotros{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #f5f2f1;
-    padding: 16px;
+    padding-top: 16px;
     width: 100%;
-}
-
-.somosUnaTiendaTitulo{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.somosUnaTiendaTitulo p{
-    font-size: 20px;
+    
+    
     
 }
 
-.somosUnaTiendaParrafo{
+.somosUnaTienda{
+
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
-    font-size: 15px;
+    margin-bottom: 20px;
+    width: 65%;
+    
+    
+}
+
+.somosUnaTienda p{
+
+    font-size: 18px;
     letter-spacing: 2px;
-    height: 20rem;
-    
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+    -webkit-transition:all .9s ease; /* Safari y Chrome */
+    -moz-transition:all .9s ease; /* Firefox */
+    -o-transition:all .9s ease; /* IE 9 */
+    -ms-transition:all .9s ease; /* Opera */
+
+                
 }
+
+.somosUnaTienda p:hover{
+    -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    -ms-transform:scale(1.05);
+    -o-transform:scale(1.05);
+    transform:scale(1.05);
+}
+
+    
 
 .contenedorInformativoSalud{
+
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     height: 5rem;
+    background-color:  #AC888A;
+    width: 100%;
     
 }
 
@@ -127,177 +165,6 @@ html{
     font-family: 'Teko', sans-serif;
     padding: 20px;
    
-
-}
-/*M E D I A*/
-
-@media (max-width: 575.98px) {
-
-    .header{
-        padding: 10px;
-        
-    }
-    .contenedorLogo{
-        justify-content: center;
-    }
-
-    .navegacion {
-        flex-direction: column;
-        flex-wrap: wrap;
-
-
-        }
-
-        .menu li{
-            display: block;
-            margin:0px;
-            padding: 3px
-        }
-
-    .seccionProductos{
-        padding-top: 16px;
-        padding-bottom: 0px;;
-        padding-left: 0px;
-        padding-right: 0px;
-        
-        
-    }
-     .contenedorProductos{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .categoriaProductos img{
-        width: 12rem;    
-        
-    }
-
-    .contenedorDestacados{
-        height: fit-content;
-    
-    }
-
-    .seccionPrincipalContacto{
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%
-    }
-
-        
-    .flexContainerFooter{
-        width: 100%;
-    }
-
-    
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) { 
-    .header{
-        width: 300%
-    }
-    .contenedorLogo{
-        justify-content: center;
-    }
-
-    .navegacion {
-        flex-direction: column;
-        flex-wrap: wrap;
-
-
-        }
-
-        .menu li{
-            display: block;
-            margin:0px;
-            padding: 3px
-        }
-
-    .seccionProductos{
-        padding-top: 16px;
-        padding-bottom: 0px;;
-        padding-left: 0px;
-        padding-right: 0px;
-        
-        
-    }
-     .contenedorProductos{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .categoriaProductos img{
-        width: 12rem;    
-        
-    }
-
-    .contenedorDestacados{
-        height: fit-content;
-    
-    }
-
-
-    
- }
-@media (min-width: 768px) and (max-width: 991.98px) { 
-    .header{
-        width: fit-content;
-    }
-    .contenedorLogo{
-        justify-content: center;
-    }
-
-    .navegacion {
-        flex-direction: column;
-        flex-wrap: wrap;
-
-
-        }
-
-        .menu li{
-            display: block;
-            margin:0px;
-            padding: 3px
-        }
-
-    .seccionProductos{
-        padding-top: 16px;
-        padding-bottom: 0px;;
-        padding-left: 0px;
-        padding-right: 0px;
-        
-        
-    }
-     
-
-    .contenedorDestacados{
-        height: fit-content;
-    
-    }
-    
-    .seccionProductos{
-        padding-top: 16px;
-        padding-bottom: 0px;;
-        padding-left: 0px;
-        padding-right: 0px;
-        
-        
-    }
-     .contenedorProductos{
-        
-        align-items: center;
-    }
-
-    .categoriaProductos img{
-        width: 12rem;    
-        
-    }
-
-    .contenedorDestacados{
-        height: fit-content;
-    
-    }
-
-
-
- }
 

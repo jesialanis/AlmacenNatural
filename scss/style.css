@@ -1,6 +1,7 @@
 .header__menu {
-  background-color: #D9B4B4;
+  background-color: #dbc4c4;
   width: 100%;
+  border-bottom: solid 2px #AC888A;
 }
 
 .header__menu .contenedorLogoYelementos {
@@ -34,29 +35,48 @@
 
 .header__menu .contenedorLogoYelementos .contenedorLogo .logo {
   margin: 10px;
-  border-radius: 200px;
+  border-radius: 100px;
   width: 60%;
 }
 
-.header__menu .contenedorLogoYelementos .navbar navbar-expand-lg navbar-light bg-light {
-  padding: 0px;
+.header__menu .contenedorLogoYelementos .container-fluid {
+  background-color: #dbc4c4;
 }
 
-.header__menu .contenedorLogoYelementos .navbar navbar-expand-lg navbar-light bg-light .container-fluid {
-  font-family: 'Roboto', sans-serif;
+.header__menu .contenedorLogoYelementos .container-fluid .collapse navbar-collapse {
+  padding-right: 30px;
+}
+
+.header__menu .contenedorLogoYelementos .container-fluid .nav-link {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: bold;
+}
+
+.header__menu .contenedorLogoYelementos .container-fluid .dropdown-menu {
+  background-color: #f5f2f1;
+}
+
+.header__menu .contenedorLogoYelementos .container-fluid .dropdown-menu .dropdown-item {
+  background-color: #f5f2f1;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: bold;
+}
+
+.header__menu .contenedorLogoYelementos .container-fluid .form-control {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: bold;
+}
+
+.header__menu .contenedorLogoYelementos .container-fluid .btn-outline-success {
+  background-color: #dbc4c4;
+  border-color: #AC888A;
   color: black;
-  font-size: 16px;
-  background-color: #D9B4B4;
 }
 
-.header__menu .contenedorLogoYelementos .navbar navbar-expand-lg navbar-light bg-light .container-fluid .nav nav-pills nav-justified a {
-  text-decoration: none;
+.header__menu .contenedorLogoYelementos .container-fluid .btn-outline-success .btn-outline-success:hover {
+  background-color: #dbc4c4;
+  border-color: #dbc4c4;
   color: black;
-  font-size: 16px;
-}
-
-.header__menu .contenedorLogoYelementos .bg-light {
-  background-color: #D9B4B4 !important;
 }
 
 .flexContainerFooter {
@@ -73,7 +93,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #D9B4B4;
+  background-color: #dbc4c4;
   width: 100%;
   margin-top: 0%px;
   padding: 20px;
@@ -96,40 +116,57 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #f5f2f1;
-  padding: 16px;
 }
 
 .section__contacto .contenedorFormulario {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 30px;
   background-color: #f5f2f1;
-  width: 300px;
-  border: solid black 1px;
+  width: 25rem;
+  border: solid  #AC888A 2px;
+  border-radius: 1%;
 }
 
-.section__contacto .contenedorFormulario #legendContactanos {
-  font-size: 30px;
-  letter-spacing: 4px;
-  font-family: 'Teko', sans-serif;
-  text-align: center;
+.section__contacto .contenedorFormulario .fieldset {
+  padding: 10px;
 }
 
-.section__contacto .contenedorFormulario .contenedorCampos {
+.section__contacto .contenedorFormulario .fieldset #legendContactanos {
+  font-size: 25px;
+  letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+  color: #AC888A;
+}
+
+.section__contacto .contenedorFormulario .fieldset .contacto {
+  border: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.section__contacto .contenedorFormulario .fieldset .contacto .contenedorCampos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,7 +176,7 @@
           flex-direction: column;
 }
 
-.section__contacto .contenedorFormulario .contenedorBotones {
+.section__contacto .contenedorFormulario .fieldset .contacto .contenedorBotones {
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,33 +189,53 @@
       justify-content: space-around;
 }
 
+.section__contacto .contenedorFormulario .fieldset .contacto .contenedorBotones .btn-light {
+  background-color: #f5f2f1;
+  border-color: #AC888A;
+  color: #AC888A;
+  font-family: 'Teko', sans-serif;
+}
+
 .section__contacto .contenedorSucursales {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #f5f2f1;
+  background-color: #AC888A;
+  width: 100%;
 }
 
 .section__contacto .contenedorSucursales h3 {
-  font-size: 30px;
+  font-size: 23px;
   letter-spacing: 4px;
   font-family: 'Teko', sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section__contacto .contenedorSucursales .sucursales {
+  padding-left: 22px;
+}
+
+.section__contacto .contenedorSucursales .sucursales p {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 .section__productos {
   background-color: #f5f2f1;
-  padding: 16px;
+  padding-top: 16px;
   width: 100%;
+}
+
+.section__productos .listasCategorias {
+  padding-bottom: 20px;
 }
 
 .section__productos .listasCategorias ul {
@@ -200,11 +257,16 @@
 
 .section__productos .listasCategorias ul li {
   list-style-type: none;
+  font-family: 'Teko', sans-serif;
 }
 
-.section__productos .listasCategorias ul li a {
-  text-decoration: none;
+.section__productos .listasCategorias ul li .btn-outline-secondary {
+  background-color: #f5f2f1;
+  border-color: #AC888A;
   color: black;
+  padding: 20px;
+  font-size: 15px;
+  letter-spacing: 4px;
 }
 
 .section__productos .contenedorDestacados {
@@ -214,11 +276,14 @@
 }
 
 .section__productos .contenedorDestacados .tituloDestacados {
-  font-size: 30px;
+  font-size: 28px;
   letter-spacing: 2px;
-  font-family: 'Teko', sans-serif;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: bold;
   text-align: center;
-  color: #D9B4B4;
+  color: #AC888A;
+  height: 6rem;
+  padding-top: 20px;
 }
 
 .section__productos .contenedorDestacados .productosDestacados {
@@ -251,6 +316,7 @@
       -ms-flex-align: center;
           align-items: center;
   font-family: 'Teko', sans-serif;
+  letter-spacing: 2px;
   margin: 1rem;
   background-color: #f5f2f1 !important;
   border-radius: 1%;
@@ -275,11 +341,152 @@
 }
 
 .section__productos .contenedorDestacados .productosDestacados .card .card-body h5 {
-  font-family: 'Teko', sans-serif;
-  color: #D9B4B4;
+  font-family: "Roboto", sans-serif !important;
+  color: #000000;
+  font-size: 15px;
 }
 
-.section__productos .contenedorDestacados .productosDestacados .card .card-body .btn btn-primary {
-  background-color: #8064A2 !important;
+.section__productos .contenedorDestacados .productosDestacados .card .card-body .btn-primary {
+  background-color: #f5f2f1 !important;
+  border: solid #AC888A;
+  color: black;
+}
+
+@media (max-width: 575.98px) {
+  .header__menu .contenedorLogoYelementos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .header__menu .contenedorLogoYelementos .contenedorLogo {
+    border-radius: 100%;
+    width: 30%;
+  }
+  .header__menu .contenedorLogoYelementos .navbar {
+    font-size: 10px;
+  }
+  .header__menu .contenedorLogoYelementos .navbar .li {
+    margin: 0px;
+    font-size: small;
+  }
+  .header__menu .contenedorLogoYelementos .navbar .form-control {
+    display: none;
+  }
+  .header__menu .contenedorLogoYelementos .navbar .btn {
+    display: none;
+  }
+  .titulosSecciones {
+    font-size: 30px;
+    letter-spacing: 3px;
+    height: 50px;
+    padding-top: 20px;
+  }
+  .categoriaProductos img {
+    padding-bottom: 10px;
+  }
+  .contenedorSucursales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .contenedorSucursales h3 {
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-family: 'Teko', sans-serif;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .header__menu .contenedorLogoYelementos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .header__menu .contenedorLogoYelementos .contenedorLogo {
+    border-radius: 100%;
+    width: 30%;
+  }
+  .header__menu .contenedorLogoYelementos .navbar {
+    font-size: 10px;
+  }
+  .header__menu .contenedorLogoYelementos .navbar .li {
+    margin: 0px;
+    font-size: small;
+  }
+  .header__menu .contenedorLogoYelementos .navbar .form-control {
+    display: none;
+  }
+  .header__menu .contenedorLogoYelementos .navbar .btn {
+    display: none;
+  }
+  .titulosSecciones {
+    font-size: 30px;
+    letter-spacing: 3px;
+    height: 50px;
+    padding-top: 20px;
+  }
+  .contenedorProductos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+  .contenedorProductos .categoriaProductos img {
+    width: 15rem;
+    border-radius: 30px;
+    padding-bottom: 20px;
+  }
+  .contenedorSucursales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .contenedorSucursales h3 {
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-family: 'Teko', sans-serif;
+  }
 }
 /*# sourceMappingURL=style.css.map */

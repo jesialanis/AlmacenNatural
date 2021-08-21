@@ -1,62 +1,117 @@
 .seccionPrincipalNosotros{
-
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #f5f2f1;
-    padding-top: 16px;
     width: 100%;
+    align-items: stretch;
     
 
     .titulosSecciones{
-
         color: black;
-        font-size: 40px;
+        font-size: 1.90rem;
         letter-spacing: 4px ;
         font-family: 'Teko', sans-serif;
         text-align: center;
-        height: 100px;
+        height: 6.25rem;
         padding-top: 25px;
         padding-bottom: 25px;
-        
-    
+        background-color: #AC888A;       
     }
   
-    .somosUnaTienda{
-
+    .contenedorParrafos{
+        margin-top: 2rem;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        margin-bottom: 20px;
-        width: 65%;
-        
-        p{
 
-            font-size: 18px;
-            letter-spacing: 2px;
-            color: black;
-            margin-top: 20px;
-            margin-bottom: 60px;
-            text-align: center;
+        .somosUnaTienda{
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            width: 65%;
+            
+            p{   
+                font-size: 18px;
+                letter-spacing: 2px;
+                color: black;
+                text-align: center;
+                -webkit-transition:all .9s ease; /* Safari y Chrome */
+                -moz-transition:all .9s ease; /* Firefox */
+                -o-transition:all .9s ease; /* IE 9 */
+                -ms-transition:all .9s ease; /* Opera */                            
+            }
+            
+            p:hover{    
+                -webkit-transform:scale(1.05);
+                -moz-transform:scale(1.05);
+                -ms-transform:scale(1.05);
+                -o-transform:scale(1.05);
+                transform:scale(1.05);
+            }
+        }
+    }
+
+    .instagram{
+        display: flex;
+        flex-direction: column;
+
+        .igArbol{
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+            align-items: flex-end;
             -webkit-transition:all .9s ease; /* Safari y Chrome */
             -moz-transition:all .9s ease; /* Firefox */
             -o-transition:all .9s ease; /* IE 9 */
-            -ms-transition:all .9s ease; /* Opera */
-        
-                        
+            -ms-transition:all .9s ease; /* Opera */ 
+
+            img{
+                padding: 10px;
+                max-height: 45px;                
+            }
+
+            h4{
+                font-size: 28px;
+                letter-spacing: 2px ;
+                font-family: $fuente-barra!important;
+                text-align: center;
+                color: black;
+                margin-top: 2rem;
+            }
         }
         
-        p:hover{
-
+        .igArbol:hover{
             -webkit-transform:scale(1.05);
             -moz-transform:scale(1.05);
             -ms-transform:scale(1.05);
             -o-transform:scale(1.05);
             transform:scale(1.05);
         }
+
+      .instagram__cards{
+        display: flex;
+        flex-direction: row;
+        margin-left: 2rem;
+        margin-right: 2rem;
+
+        .card{
+            display: flex;
+            flex-direction: row;
+            margin-top: 1rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            margin-bottom: 5rem;
+            border-radius: 1%;
+            border: transparent;
+            background-color: #f5f2f1;
+        }
+      }  
     }
  
-    .contenedorInformativoSalud{
-        
+    .contenedorInformativoSalud{        
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -64,7 +119,6 @@
         height: 5rem;
         background-color:  #AC888A;
         width: 100%;
-
 
         .informativo{
             
@@ -75,17 +129,8 @@
                 letter-spacing: 2px ;
                 font-family: 'Teko', sans-serif;
                 padding: 20px;
-               
             }
         }
-        
-       
     }
-
-        
-        
-    
-
-
 }
 

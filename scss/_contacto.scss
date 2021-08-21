@@ -2,116 +2,124 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: stretch;
     background-color: #f5f2f1;
-
+    
     .titulosSecciones{
-
         color: black;
-        font-size: 40px;
+        font-size: 1.90rem;
         letter-spacing: 4px ;
         font-family: 'Teko', sans-serif;
         text-align: center;
-        height: 100px;
+        height: 6.25rem;
         padding-top: 25px;
-        padding-bottom: 25px;
-        
-    
+        background-color: #AC888A; 
     }
 
-
-
-    
-    .contenedorFormulario{
+    &__form__maps{
         display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
+        justify-content: space-evenly;
         align-items: center;
-        margin: 30px;
-        background-color: #f5f2f1;
-        width: 25rem;
-        border: solid  #AC888A 2px;
-        border-radius: 1%;
         
-        .fieldset{
-            padding: 10px;
-
-
-            #legendContactanos{
-                font-size: 25px;
-                letter-spacing: 2px ;
-                font-family: 'Roboto', sans-serif;
-                color: #AC888A;
-                                
-            }
-
-            .contacto{
-                border: 20px;
-                font-family: 'Roboto', sans-serif;
-                font-weight: bold;
-                
-                
-                
-                .contenedorCampos{
-                    display: flex;
-                    flex-direction: column;
-                
+        .contenedorFormulario{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+            margin-top: 3rem;
+            margin-left: 3rem;
+            margin-bottom: 3rem;
+            background-color: #f5f2f1;
+            width: 25rem;
+            border: solid  #AC888A 1px;
+            border-radius: 1%;
+                        
+            .fieldset{
+                padding: 10px;                
+    
+                #legendContactanos{
+                    font-size: 25px;
+                    padding-bottom: 0.5rem;
+                    font-family: 'Roboto', sans-serif;
+                    color: black;                                                    
                 }
-                .contenedorBotones{
-                    padding: 10px;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-around;
-                    
-                    .btn-light{
-                    background-color: #f5f2f1;;
-                    border-color: #AC888A;;
-                    color: #AC888A;
-                    font-family: 'Teko', sans-serif;
-                    
-
-                
+    
+                .contacto{
+                    border: 20px;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: bold;                 
+                                        
+                    .contenedorCampos{
+                        display: flex;
+                        flex-direction: column;
+                        padding-bottom: 20px;
+                        
+                        label {    
+                            color: black;
+                            $fuente-barra: 'Roboto', sans-serif;
+                            letter-spacing: 4px ;
+                        }
+    
+                        .input button, input, optgroup, select, textarea {
+                            border-radius: 5px;
+                            border: solid 1px #AC888A;
+                            color: #AC888A;
+                        }
                     }
-                }
-                
+
+                    .contenedorBotones{    
+                        padding: 10px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        border-radius: 5px;
+                        padding-bottom: 20px;  
+                                        
+                        .btn-light{
+                            background-color: #f5f2f1;;
+                            border-color: #AC888A;;
+                            color: #AC888A;
+                            font-family: 'Teko', sans-serif;                                           
+                        }
+                    }                       
+                }                    
             }  
         }
-                
-        
-
-
-        }
-        
-
+    }
+    
     .contenedorSucursales{
         display: flex;
         align-items: flex-end;
         justify-content: center;
         background-color:#AC888A;
         width: 100%;
-        
-
-        
+        padding-top: 10px;
+    
         h3{
             font-size: 23px;
             letter-spacing: 4px ;
             font-family: 'Teko', sans-serif;
             padding-left: 20px;
             padding-right: 20px;
-        
         }
+
         .sucursales{
             padding-left: 22px;
-
 
             p{
                 color: black;
                 font-family: 'Roboto', sans-serif;
                 font-weight: bold;
+                height: 100%;
             }
         }
+    }   
+}                
         
-    }
 
 
-}
+        
+   
+
+
+

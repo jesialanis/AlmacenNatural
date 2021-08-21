@@ -1,94 +1,91 @@
 .header__menu{
-
     background-color: #dbc4c4;
     width: 100%;
     border-bottom: solid 2px #AC888A;
 
     .contenedorLogoYelementos{
-
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;  
         
         .contenedorLogo{
-
             display: flex;
             flex-direction: row;
             align-items: flex-start;
 
             .logo{
-
                 margin: 10px;
-                border-radius: 100px;
-                width: 60%;
-                
+                border-radius: 4rem;
+                width: 120px;
+                margin-left: 10px;
             }
+            
         }
 
         .container-fluid{
-
             background-color: #dbc4c4;
     
             .collapse navbar-collapse{
-
-                padding-right: 30px;
-               
-            
+                padding-right: 30px;          
             }
 
             .nav-link{
-
                 font-family: $fuente-barra!important;
                 font-weight: bold;
-                
+                transition: all 0.8s;                
             }
-
+            
+            .nav-link:hover{                
+                box-shadow: 0 0 0.20rem #AC888A;          
+            }
+          
             .dropdown-menu{
-
-                background-color: #f5f2f1 ;
+                background-color: #f5f2f1;                
                 
-
                 .dropdown-item{
-
                 background-color: #f5f2f1 ;
                 font-family: $fuente-barra!important;
-                font-weight: bold;
-                
+                font-weight: bold; 
+                transition: all .5s;                 
+                }
+
+                .dropdown-item:hover{
+                    background-color: #AC888A;
                 }
             }
 
            .form-control{
-
             font-family: $fuente-barra!important;
             font-weight: bold;
-            
-           } 
+            color: black; 
+           }
+           
+           .form-control:hover{
+                border-color: #AC888A;  
+           }
+
+           .form-control:focus{
+                color: black;
+                box-shadow: 0 0 0 0.25rem #AC888A;  
+           }
 
            .btn-outline-success{
-
-            background-color: #dbc4c4;
-            border-color: #AC888A;
-            color: black;
-            
-
-            .btn-outline-success:hover{
-                
                 background-color: #dbc4c4;
-                border-color: #dbc4c4;
+                border-color: #AC888A;
+                color: black;                  
+            }
+
+            .btn-outline-success:hover{                
+                background-color: #dbc4c4;
+                border-color: #AC888A;
                 color: black;
-               }
-           } 
-
-           
-       
-    
-
-
+            }
+            
+            .btn-outline-success:focus {
+                color: black;
+                box-shadow: 0 0 0 0.25rem #AC888A;            
+            }
+        }
     }
-
-
-    }
-   
-
 }

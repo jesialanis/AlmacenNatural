@@ -1,25 +1,52 @@
 .section__productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #f5f2f1;
-    padding-top: 16px;
     width: 100%;
-    
-    .titulosSecciones{
 
+    .titulosSecciones{
         color: black;
-        font-size: 40px;
+        font-size: 1.90rem;
         letter-spacing: 4px ;
         font-family: 'Teko', sans-serif;
         text-align: center;
-        height: 100px;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        
-    
+        height: 6.25rem;
+        padding-top: 1.55rem;
+        padding-bottom: 1.55rem;
+        background-color: #AC888A;    
     }
 
-    .listasCategorias{
-       
-        padding-bottom: 20px;
+    .categorias{
+        display: flex;
+        justify-content: center;
+        padding-left: 0.5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        
+        .btn-group{
+            font-family: 'Teko', sans-serif;
+            
+            .btn-primary {
+                color: black;
+                background-color: #f5f2f1;
+                border-color: #AC888A;
+                align-items: center;
+                font-family: 'Teko', sans-serif;
+                letter-spacing: 2px;
+                font-size: 1rem;
+            }
+
+            .btn-primary:hover {
+                background-color: #AC888A;
+                border-color: #999999;
+            }
+           
+            .btn-primary:focus {
+                color: black;
+                box-shadow: 0 0 0 0.25rem #dbc4c4;                
+            }
+        }
 
 
         ul{
@@ -27,56 +54,46 @@
             flex-direction: row;
             justify-content: space-evenly;
             align-items: center;
-            height: 5rem;
-            
-
+            height: 5rem;   
 
             li{
                 list-style-type: none;
-                font-family: 'Teko', sans-serif;
-                        
-                
-                .btn-outline-secondary{
-                    background-color: #f5f2f1;
-                    border-color: #AC888A;
-                    color: black;
-                    padding: 20px;
-                    font-size: 15px;
-                    letter-spacing: 4px;
-                    
-                 
-                }
+                font-family: 'Teko', sans-serif;               
             }
         }
- 
     }
+ 
     .contenedorDestacados{
-
+        display: flex;
+        width: 85rem;   
         height: fit-content;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
             
         .tituloDestacados{
-
-            font-size: 28px;
-            letter-spacing: 2px ;
+            font-size: 1.7rem;
             font-family: $fuente-barra!important;
-            font-weight: bold;
+            letter-spacing: 1px ;
             text-align: center;
-            color: #AC888A;;
-            height: 6rem;
-            padding-top: 20px;
-            
+            color: black
+            height 6rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;     
         }
-     
-        .productosDestacados{
-            
+        
+        p{
+            display: none;
+        }
+
+        .productosDestacados{            
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
-            width: 100%;
-        
-            .card{
+            width: 90%;
 
+            .card{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -86,46 +103,93 @@
                 margin: 1rem;
                 background-color: #f5f2f1!important;
                 border-radius: 1%;
-
+                
+                img{                    
+                    transition: all 600ms ease;
+                    opacity:1;
+                }
                 
                 img:hover{
-
-                    filter: grayscale(60%);
+                    opacity:0.5;
                 }
 
                 .card-body{
-
                     display: flex;
                     flex-direction: column;
                     align-items: center;
 
                     h5{
-
-                    font-family: $fuente-barra!important;;
-                    color: #000000;
-                    font-size: 15px;
+                        font-family: $fuente-barra!important;
+                        color: #000000;
+                        font-size: 15px;
                     }
-
+                    
                     .btn-primary {
-
-                    background-color:  #f5f2f1 !important;
-                    border: solid #AC888A;
-                    color: black;
+                        background-color:  #f5f2f1 !important;
+                        border: solid #AC888A;
+                        color: black;
                     }
+                }   
+
+                .btn-primary:hover {
+                    background-color: #AC888A;
+                    border-color: #dbc4c4;
+                }
+                
+                .btn-primary:focus {
+                    color: black;
+                    box-shadow: 0 0 0 0.25rem #dbc4c4;                    
                 }
             }
         }
     }
 
-    .contenedorCompraYenvios{
+    .contenedorNovedades{
+        display: flex;
+        width: 85rem;   
+        height: fit-content;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+            
+        .tituloNovedades{
+            font-size: 1.7rem;
+            font-family: $fuente-barra!important;
+            letter-spacing: 1px ;
+            text-align: center;
+            color: black
+            height 6rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;  
+        }
+     
+        .productosNovedades{            
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 90%;
+        
+            .card{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 1rem;
+                border: transparent;
+                border-radius: 1%;                
+            }            
+        }
+    }
 
+    .contenedorCompraYenvios{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
         height: 6rem;
         background-color: #AC888A;
-
 
         .compraYenvio{
 
@@ -135,10 +199,7 @@
                 font-size: 20px;
                 letter-spacing: 2px ;
                 font-family: 'Teko', sans-serif;
-
             }
-            
         }
     }
 }
-

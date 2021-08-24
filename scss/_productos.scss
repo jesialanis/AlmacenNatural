@@ -1,204 +1,166 @@
-.section__productos{
+.section__productos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #f5f2f1;
     width: 100%;
 
-    .titulosSecciones{
+    .titulosSecciones {
         color: black;
-        font-size: 1.90rem;
-        letter-spacing: 4px ;
-        font-family: 'Teko', sans-serif;
+        font-size: 1.9rem;
+        letter-spacing: 4px;
+        font-family: "Teko", sans-serif;
         text-align: center;
-        height: 6.25rem;
+        height: 5rem;
         padding-top: 1.55rem;
         padding-bottom: 1.55rem;
-        background-color: #AC888A;    
+        background-color: #ac888a;
     }
 
-    .categorias{
+    .categorias {
         display: flex;
         justify-content: center;
         padding-left: 0.5rem;
         padding-top: 2rem;
         padding-bottom: 2rem;
-        
-        .btn-group{
-            font-family: 'Teko', sans-serif;
-            
+
+        .btn-group {
+            font-family: "Teko", sans-serif;
+
             .btn-primary {
                 color: black;
                 background-color: #f5f2f1;
-                border-color: #AC888A;
+                border-color: #ac888a;
                 align-items: center;
-                font-family: 'Teko', sans-serif;
+                font-family: "Teko", sans-serif;
                 letter-spacing: 2px;
                 font-size: 1rem;
             }
 
             .btn-primary:hover {
-                background-color: #AC888A;
+                background-color: #ac888a;
                 border-color: #999999;
             }
-           
+
             .btn-primary:focus {
                 color: black;
-                box-shadow: 0 0 0 0.25rem #dbc4c4;                
+                box-shadow: 0 0 0 0.25rem #dbc4c4;
             }
         }
 
-
-        ul{
+        ul {
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
             align-items: center;
-            height: 5rem;   
+            height: 5rem;
 
-            li{
+            li {
                 list-style-type: none;
-                font-family: 'Teko', sans-serif;               
-            }
-        }
-    }
- 
-    .contenedorDestacados{
-        display: flex;
-        width: 85rem;   
-        height: fit-content;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;        
-            
-        .tituloDestacados{
-            font-size: 1.7rem;
-            font-family: $fuente-barra!important;
-            letter-spacing: 1px ;
-            text-align: center;
-            color: black
-            height 6rem;
-            padding-top: 2rem;
-            padding-bottom: 2rem;     
-        }
-        
-        p{
-            display: none;
-        }
-
-        .productosDestacados{            
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            width: 90%;
-
-            .card{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                font-family: 'Teko', sans-serif;
-                letter-spacing: 2px;
-                margin: 1rem;
-                background-color: #f5f2f1!important;
-                border-radius: 1%;
-                
-                img{                    
-                    transition: all 600ms ease;
-                    opacity:1;
-                }
-                
-                img:hover{
-                    opacity:0.5;
-                }
-
-                .card-body{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-
-                    h5{
-                        font-family: $fuente-barra!important;
-                        color: #000000;
-                        font-size: 15px;
-                    }
-                    
-                    .btn-primary {
-                        background-color:  #f5f2f1 !important;
-                        border: solid #AC888A;
-                        color: black;
-                    }
-                }   
-
-                .btn-primary:hover {
-                    background-color: #AC888A;
-                    border-color: #dbc4c4;
-                }
-                
-                .btn-primary:focus {
-                    color: black;
-                    box-shadow: 0 0 0 0.25rem #dbc4c4;                    
-                }
+                font-family: "Teko", sans-serif;
             }
         }
     }
 
-    .contenedorNovedades{
+    .contenedorDestacados {
         display: flex;
-        width: 85rem;   
+        width: 85rem;
         height: fit-content;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 3rem;
-            
-        .tituloNovedades{
+
+        .tituloDestacados {
             font-size: 1.7rem;
-            font-family: $fuente-barra!important;
-            letter-spacing: 1px ;
+            font-family: $fuente-barra !important;
+            letter-spacing: 1px;
             text-align: center;
-            color: black
-            height 6rem;
+            color: black height 6rem;
             padding-top: 2rem;
-            padding-bottom: 2rem;  
+            padding-bottom: 2rem;
         }
-     
-        .productosNovedades{            
+
+        p {
+            display: none;
+        }
+
+        .productosDestacados {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
             width: 90%;
-        
-            .card{
+
+            .card {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                font-family: "Teko", sans-serif;
+                letter-spacing: 2px;
                 margin: 1rem;
-                border: transparent;
-                border-radius: 1%;                
-            }            
+                background-color: #f5f2f1 !important;
+                border-radius: 1%;
+
+                img {
+                    transition: all 600ms ease;
+                }
+
+                img:hover {
+                    opacity: 0.5;
+                }
+
+                .card-body {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    h5 {
+                        font-family: $fuente-barra !important;
+                        color: #000000;
+                        font-size: 15px;
+                    }
+
+                    .btn-primary {
+                        background-color: #f5f2f1 !important;
+                        border: solid #ac888a;
+                        color: black;
+                    }
+                }
+
+                .btn-primary:hover {
+                    background-color: #ac888a;
+                    border-color: #dbc4c4;
+                }
+
+                .btn-primary:focus {
+                    color: black;
+                    box-shadow: 0 0 0 0.25rem #dbc4c4;
+                }
+            }
         }
     }
 
-    .contenedorCompraYenvios{
+    .contenedorCompraYenvios {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
         height: 6rem;
-        background-color: #AC888A;
+        background-color: #ac888a;
 
-        .compraYenvio{
-
-            a{
+        .compraYenvio {
+            a {
                 text-decoration: none;
                 color: black;
                 font-size: 20px;
-                letter-spacing: 2px ;
-                font-family: 'Teko', sans-serif;
+                letter-spacing: 2px;
+                font-family: "Teko", sans-serif;
+                transition: all 0.5s;
+            }
+
+            a:hover {
+                box-shadow: 0 0 0.2rem black;
             }
         }
     }

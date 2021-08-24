@@ -1,51 +1,48 @@
-.flexContainerFooter{
+.flexContainerFooter {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:#dbc4c4;
+    background-color: #dbc4c4;
     width: 100%;
     margin-top: 0%px;
     padding: 20px;
     clear: both;
 
-    .seguinosRedes{        
-        
-        h5{
-            letter-spacing: 4px ;
-            font-family: 'Teko', sans-serif;
-            text-align: center;        
+    .seguinosRedes {
+        h5 {
+            letter-spacing: 4px;
+            font-family: "Teko", sans-serif;
+            text-align: center;
         }
     }
 
-    .redes{
-        
-        img{        
+    .redes {
+        img {
             padding: 10px;
             width: 40px;
             height: 40px;
-            transition: all 0.8s;            
+            transition: all 0.8s;
         }
 
-        img:hover{
-            box-shadow: 0 0 0.20rem #AC888A;
+        img:hover {
+            box-shadow: 0 0 0.2rem #ac888a;
         }
     }
-       
-    .mediosDePago{
+
+    .mediosDePago {
         display: flex;
         flex-direction: row;
         margin-top: 1rem;
         border-top: 1rem;
-        border-top: solid 1px #AC888A;
+        border-top: solid 1px #ac888a;
         align-items: center;
 
-        
-        .imgTarjetas{
-            display: flex; 
+        .imgTarjetas {
+            display: flex;
             flex-direction: row;
-               
-            img{        
+
+            img {
                 padding: 10px;
                 max-height: 40px;
             }

@@ -1,0 +1,100 @@
+.section__newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f2f1;
+    width: 100%;
+    align-items: stretch;
+
+    .titulosSecciones {
+        color: black;
+        font-size: 1.9rem;
+        letter-spacing: 4px;
+        font-family: "Teko", sans-serif;
+        text-align: center;
+        height: 5rem;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        background-color: #ac888a;
+    }
+
+    .contenedorNovedades {
+        display: flex;
+        width: 85rem;
+        height: fit-content;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+
+        .tituloNovedades {
+            font-size: 1.7rem;
+            font-family: $fuente-barra !important;
+            letter-spacing: 1px;
+            text-align: center;
+            color: black height 6rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .productosNovedades {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 90%;
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 1rem;
+                border: transparent;
+                border-radius: 1%;
+                -webkit-transition: all 0.9s ease; /* Safari y Chrome */
+                -moz-transition: all 0.9s ease; /* Firefox */
+                -o-transition: all 0.9s ease; /* IE 9 */
+                -ms-transition: all 0.9s ease; /* Opera */
+            }
+
+            .card:hover {
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__contenedor {
+        background-color: #ac888a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__texto {
+            margin: 0.8rem;
+            text-align: center;
+        }
+
+        &__input {
+            margin-bottom: 1rem;
+            background-color: #f5f2f1;
+
+            input {
+                background-color: #f5f2f1;
+                border: 1px solid transparent;
+            }
+            input:focus-visible {
+                outline: transparent;
+            }
+
+            button {
+                background-color: #f5f2f1;
+                border: 1px solid transparent;
+            }
+        }
+    }
+}

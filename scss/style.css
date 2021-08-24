@@ -10,7 +10,7 @@ html {
 .header__menu {
   background-color: #dbc4c4;
   width: 100%;
-  border-bottom: solid 2px #AC888A;
+  border-bottom: solid 2px #ac888a;
 }
 
 .header__menu .contenedorLogoYelementos {
@@ -21,12 +21,12 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .header__menu .contenedorLogoYelementos .contenedorLogo {
@@ -49,6 +49,10 @@ html {
   margin-left: 10px;
 }
 
+.header__menu .contenedorLogoYelementos .navbar {
+  margin-bottom: 0.5rem;
+}
+
 .header__menu .contenedorLogoYelementos .container-fluid {
   background-color: #dbc4c4;
 }
@@ -60,13 +64,13 @@ html {
 .header__menu .contenedorLogoYelementos .container-fluid .nav-link {
   font-family: "Roboto", sans-serif !important;
   font-weight: bold;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .header__menu .contenedorLogoYelementos .container-fluid .nav-link:hover {
-  -webkit-box-shadow: 0 0 0.20rem #AC888A;
-          box-shadow: 0 0 0.20rem #AC888A;
+  -webkit-box-shadow: 0 0 0.2rem #ac888a;
+          box-shadow: 0 0 0.2rem #ac888a;
 }
 
 .header__menu .contenedorLogoYelementos .container-fluid .dropdown-menu {
@@ -77,46 +81,47 @@ html {
   background-color: #f5f2f1;
   font-family: "Roboto", sans-serif !important;
   font-weight: bold;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .header__menu .contenedorLogoYelementos .container-fluid .dropdown-menu .dropdown-item:hover {
-  background-color: #AC888A;
+  background-color: #ac888a;
 }
 
 .header__menu .contenedorLogoYelementos .container-fluid .form-control {
   font-family: "Roboto", sans-serif !important;
   font-weight: bold;
   color: black;
+  border-right: 1rem;
 }
 
 .header__menu .contenedorLogoYelementos .container-fluid .form-control:hover {
-  border-color: #AC888A;
+  border-color: #ac888a;
 }
 
 .header__menu .contenedorLogoYelementos .container-fluid .form-control:focus {
   color: black;
-  -webkit-box-shadow: 0 0 0 0.25rem #AC888A;
-          box-shadow: 0 0 0 0.25rem #AC888A;
+  -webkit-box-shadow: 0 0 0 0.25rem #ac888a;
+          box-shadow: 0 0 0 0.25rem #ac888a;
 }
 
 .header__menu .contenedorLogoYelementos .container-fluid .btn-outline-success {
   background-color: #dbc4c4;
-  border-color: #AC888A;
+  border-color: #ac888a;
   color: black;
 }
 
 .header__menu .contenedorLogoYelementos .container-fluid .btn-outline-success:hover {
   background-color: #dbc4c4;
-  border-color: #AC888A;
+  border-color: #ac888a;
   color: black;
 }
 
 .header__menu .contenedorLogoYelementos .container-fluid .btn-outline-success:focus {
   color: black;
-  -webkit-box-shadow: 0 0 0 0.25rem #AC888A;
-          box-shadow: 0 0 0 0.25rem #AC888A;
+  -webkit-box-shadow: 0 0 0 0.25rem #ac888a;
+          box-shadow: 0 0 0 0.25rem #ac888a;
 }
 
 .flexContainerFooter {
@@ -142,7 +147,7 @@ html {
 
 .flexContainerFooter .seguinosRedes h5 {
   letter-spacing: 4px;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   text-align: center;
 }
 
@@ -155,8 +160,8 @@ html {
 }
 
 .flexContainerFooter .redes img:hover {
-  -webkit-box-shadow: 0 0 0.20rem #AC888A;
-          box-shadow: 0 0 0.20rem #AC888A;
+  -webkit-box-shadow: 0 0 0.2rem #ac888a;
+          box-shadow: 0 0 0.2rem #ac888a;
 }
 
 .flexContainerFooter .mediosDePago {
@@ -169,7 +174,7 @@ html {
           flex-direction: row;
   margin-top: 1rem;
   border-top: 1rem;
-  border-top: solid 1px #AC888A;
+  border-top: solid 1px #ac888a;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -196,14 +201,14 @@ html {
 
 .seccionProductosIndex .titulosSecciones {
   color: black;
-  font-size: 1.90rem;
+  font-size: 1.9rem;
   letter-spacing: 4px;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   text-align: center;
-  height: 6.25rem;
+  height: 5rem;
   padding-top: 25px;
   padding-bottom: 25px;
-  background-color: #AC888A;
+  background-color: #ac888a;
 }
 
 .seccionProductosIndex .contenedorProductos {
@@ -227,15 +232,15 @@ html {
 }
 
 .seccionProductosIndex .contenedorProductos .categoriaProductos img {
-  width: 19rem;
+  width: 25rem;
   border-radius: 20px;
-  -webkit-transition: all .9s ease;
+  -webkit-transition: all 0.9s ease;
   /* Safari y Chrome */
-  -moz-transition: all .9s ease;
+  -moz-transition: all 0.9s ease;
   /* Firefox */
-  -o-transition: all .9s ease;
+  -o-transition: all 0.9s ease;
   /* IE 9 */
-  -ms-transition: all .9s ease;
+  -ms-transition: all 0.9s ease;
   /* Opera */
 }
 
@@ -259,7 +264,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   height: 6rem;
-  background-color: #AC888A;
+  background-color: #ac888a;
 }
 
 .seccionProductosIndex .contenedorCompraYenvios .compraYenvio a {
@@ -267,7 +272,14 @@ html {
   color: black;
   font-size: 1.25rem;
   letter-spacing: 2px;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.seccionProductosIndex .contenedorCompraYenvios .compraYenvio a:hover {
+  -webkit-box-shadow: 0 0 0.2rem black;
+          box-shadow: 0 0 0.2rem black;
 }
 
 .section__contacto {
@@ -289,13 +301,13 @@ html {
 
 .section__contacto .titulosSecciones {
   color: black;
-  font-size: 1.90rem;
+  font-size: 1.9rem;
   letter-spacing: 4px;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   text-align: center;
-  height: 6.25rem;
+  height: 5rem;
   padding-top: 25px;
-  background-color: #AC888A;
+  background-color: #ac888a;
 }
 
 .section__contacto__form__maps {
@@ -328,7 +340,7 @@ html {
   margin-bottom: 3rem;
   background-color: #f5f2f1;
   width: 25rem;
-  border: solid  #AC888A 1px;
+  border: solid #ac888a 1px;
   border-radius: 1%;
 }
 
@@ -339,13 +351,13 @@ html {
 .section__contacto__form__maps .contenedorFormulario .fieldset #legendContactanos {
   font-size: 25px;
   padding-bottom: 0.5rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: black;
 }
 
 .section__contacto__form__maps .contenedorFormulario .fieldset .contacto {
   border: 20px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
 
@@ -365,10 +377,14 @@ html {
   letter-spacing: 4px;
 }
 
-.section__contacto__form__maps .contenedorFormulario .fieldset .contacto .contenedorCampos .input button, .section__contacto__form__maps .contenedorFormulario .fieldset .contacto .contenedorCampos input, .section__contacto__form__maps .contenedorFormulario .fieldset .contacto .contenedorCampos optgroup, .section__contacto__form__maps .contenedorFormulario .fieldset .contacto .contenedorCampos select, .section__contacto__form__maps .contenedorFormulario .fieldset .contacto .contenedorCampos textarea {
+.section__contacto__form__maps .contenedorFormulario .fieldset .contacto .contenedorCampos .input button,
+.section__contacto__form__maps .contenedorFormulario .fieldset .contacto .contenedorCampos input,
+.section__contacto__form__maps .contenedorFormulario .fieldset .contacto .contenedorCampos optgroup,
+.section__contacto__form__maps .contenedorFormulario .fieldset .contacto .contenedorCampos select,
+.section__contacto__form__maps .contenedorFormulario .fieldset .contacto .contenedorCampos textarea {
   border-radius: 5px;
-  border: solid 1px #AC888A;
-  color: #AC888A;
+  border: solid 1px #ac888a;
+  color: #ac888a;
 }
 
 .section__contacto__form__maps .contenedorFormulario .fieldset .contacto .contenedorBotones {
@@ -388,9 +404,9 @@ html {
 
 .section__contacto__form__maps .contenedorFormulario .fieldset .contacto .contenedorBotones .btn-light {
   background-color: #f5f2f1;
-  border-color: #AC888A;
-  color: #AC888A;
-  font-family: 'Teko', sans-serif;
+  border-color: #ac888a;
+  color: #ac888a;
+  font-family: "Teko", sans-serif;
 }
 
 .section__contacto .contenedorSucursales {
@@ -403,7 +419,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #AC888A;
+  background-color: #ac888a;
   width: 100%;
   padding-top: 10px;
 }
@@ -411,7 +427,7 @@ html {
 .section__contacto .contenedorSucursales h3 {
   font-size: 23px;
   letter-spacing: 4px;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -422,7 +438,7 @@ html {
 
 .section__contacto .contenedorSucursales .sucursales p {
   color: black;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   height: 100%;
 }
@@ -444,14 +460,14 @@ html {
 
 .section__productos .titulosSecciones {
   color: black;
-  font-size: 1.90rem;
+  font-size: 1.9rem;
   letter-spacing: 4px;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   text-align: center;
-  height: 6.25rem;
+  height: 5rem;
   padding-top: 1.55rem;
   padding-bottom: 1.55rem;
-  background-color: #AC888A;
+  background-color: #ac888a;
 }
 
 .section__productos .categorias {
@@ -467,23 +483,23 @@ html {
 }
 
 .section__productos .categorias .btn-group {
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
 }
 
 .section__productos .categorias .btn-group .btn-primary {
   color: black;
   background-color: #f5f2f1;
-  border-color: #AC888A;
+  border-color: #ac888a;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   letter-spacing: 2px;
   font-size: 1rem;
 }
 
 .section__productos .categorias .btn-group .btn-primary:hover {
-  background-color: #AC888A;
+  background-color: #ac888a;
   border-color: #999999;
 }
 
@@ -512,7 +528,7 @@ html {
 
 .section__productos .categorias ul li {
   list-style-type: none;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
 }
 
 .section__productos .contenedorDestacados {
@@ -540,7 +556,7 @@ html {
   font-family: "Roboto", sans-serif !important;
   letter-spacing: 1px;
   text-align: center;
-  color: black height 6rem;
+  color: black height 6rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -578,7 +594,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   letter-spacing: 2px;
   margin: 1rem;
   background-color: #f5f2f1 !important;
@@ -588,7 +604,6 @@ html {
 .section__productos .contenedorDestacados .productosDestacados .card img {
   -webkit-transition: all 600ms ease;
   transition: all 600ms ease;
-  opacity: 1;
 }
 
 .section__productos .contenedorDestacados .productosDestacados .card img:hover {
@@ -616,12 +631,12 @@ html {
 
 .section__productos .contenedorDestacados .productosDestacados .card .card-body .btn-primary {
   background-color: #f5f2f1 !important;
-  border: solid #AC888A;
+  border: solid #ac888a;
   color: black;
 }
 
 .section__productos .contenedorDestacados .productosDestacados .card .btn-primary:hover {
-  background-color: #AC888A;
+  background-color: #ac888a;
   border-color: #dbc4c4;
 }
 
@@ -629,71 +644,6 @@ html {
   color: black;
   -webkit-box-shadow: 0 0 0 0.25rem #dbc4c4;
           box-shadow: 0 0 0 0.25rem #dbc4c4;
-}
-
-.section__productos .contenedorNovedades {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 85rem;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 3rem;
-}
-
-.section__productos .contenedorNovedades .tituloNovedades {
-  font-size: 1.7rem;
-  font-family: "Roboto", sans-serif !important;
-  letter-spacing: 1px;
-  text-align: center;
-  color: black height 6rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.section__productos .contenedorNovedades .productosNovedades {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 90%;
-}
-
-.section__productos .contenedorNovedades .productosNovedades .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 1rem;
-  border: transparent;
-  border-radius: 1%;
 }
 
 .section__productos .contenedorCompraYenvios {
@@ -711,7 +661,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   height: 6rem;
-  background-color: #AC888A;
+  background-color: #ac888a;
 }
 
 .section__productos .contenedorCompraYenvios .compraYenvio a {
@@ -719,7 +669,14 @@ html {
   color: black;
   font-size: 20px;
   letter-spacing: 2px;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.section__productos .contenedorCompraYenvios .compraYenvio a:hover {
+  -webkit-box-shadow: 0 0 0.2rem black;
+          box-shadow: 0 0 0.2rem black;
 }
 
 @media (max-width: 575.98px) {
@@ -750,14 +707,171 @@ html {
     margin-left: 10px;
   }
   /*S E C C I O N  I N D E X*/
-  .contenedorCategorias {
-    width: 100%;
-  }
-  .contenedorCategorias .titulosSecciones {
-    font-size: 1rem;
+  .seccionProductosIndex .titulosSecciones {
+    font-size: 1.5rem !important;
     letter-spacing: 1px;
   }
   .categoriaProductos img {
+    padding-bottom: 10px;
+    width: 20rem !important;
+  }
+  /*S E C C I O N   P R O D U C T O S*/
+  .section__productos {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section__productos .contenedorCategorias {
+    width: 100%;
+  }
+  .section__productos .contenedorCategorias .titulosSecciones {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding-top: 1rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .section__productos .contenedorDestacados {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section__productos .contenedorDestacados p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .section__productos .contenedorDestacados .productosDestacados {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 27rem;
+    overflow-y: scroll;
+  }
+  .section__productos .contenedorNovedades {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .contenedorCompraYenvios {
+    width: 100%;
+  }
+  /*S E C C I O N  C O N T A C T O*/
+  .section__contacto__form__maps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section__contacto__form__maps .contenedorFormulario {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 23rem;
+  }
+  .section__contacto__form__maps .maps iframe {
+    width: 350px;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  .section__contacto .contenedorSucursales {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    font-size: small;
+  }
+  /*S E C C I O N  Q U I E N E S   S O M O S*/
+  .somosUnaTienda p {
+    font-size: 1rem !important;
+  }
+  .instagram__cards {
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+  }
+  .instagram__cards .card {
+    margin-bottom: 3rem;
+  }
+  /*S E C C I O N  NEWSLETTER*/
+  .contenedorNovedades {
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* H E A D E R*/
+  .header__menu .contenedorLogoYelementos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-bottom: 0.5rem;
+  }
+  .header__menu .contenedorLogoYelementos .contenedorLogo {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header__menu .contenedorLogoYelementos .contenedorLogo .logo {
+    margin-top: 1rem;
+    border-radius: 4rem;
+    width: 100px;
+    margin-left: 10px;
+  }
+  /*S E C C I O N  I N D E X*/
+  .seccionProductosIndex .titulosSecciones {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  .contenedorProductos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedorProductos .categoriaProductos img {
     padding-bottom: 10px;
     width: 15rem;
   }
@@ -770,7 +884,10 @@ html {
         -ms-flex-align: center;
             align-items: center;
   }
-  .section__productos .titulosSecciones {
+  .section__productos .contenedorCategorias {
+    width: 100%;
+  }
+  .section__productos .contenedorCategorias .titulosSecciones {
     font-size: 1rem;
     letter-spacing: 1px;
     padding-top: 1rem;
@@ -818,16 +935,11 @@ html {
     width: -moz-fit-content;
     width: fit-content;
   }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .titulosSecciones {
-    font-size: 30px;
-    letter-spacing: 3px;
-    height: 50px;
-    padding-top: 20px;
+  .contenedorCompraYenvios {
+    width: 100%;
   }
-  .contenedorProductos {
+  /*S E C C I O N  C O N T A C T O*/
+  .section__contacto__form__maps {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -835,20 +947,115 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  }
+  .section__contacto__form__maps .contenedorFormulario {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 23rem;
+  }
+  .section__contacto__form__maps .maps iframe {
+    width: 350px;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  .section__contacto .contenedorSucursales {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    font-size: small;
+  }
+  /*S E C C I O N  Q U I E N E S   S O M O S*/
+  .somosUnaTienda p {
+    font-size: 1rem !important;
+  }
+  .instagram__cards {
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+  }
+  .instagram__cards .card {
+    margin-bottom: 3rem;
+  }
+  /*S E C C I O N  NEWSLETTER*/
+  .contenedorNovedades {
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* H E A D E R*/
+  .header__menu .contenedorLogoYelementos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-bottom: 0.5rem;
+  }
+  .header__menu .contenedorLogoYelementos .contenedorLogo {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header__menu .contenedorLogoYelementos .contenedorLogo .logo {
+    margin-top: 1rem;
+    border-radius: 4rem;
+    width: 100px;
+    margin-left: 10px;
+  }
+  /*S E C C I O N  I N D E X*/
+  .seccionProductosIndex .titulosSecciones {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  .contenedorProductos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedorProductos .categoriaProductos img {
+    padding-bottom: 10px;
+    width: 16rem !important;
+  }
+  /*S E C C I O N   P R O D U C T O S*/
+  .section__productos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 50px;
-    padding-bottom: 80px;
   }
-  .contenedorProductos .categoriaProductos img {
-    width: 15rem;
-    border-radius: 30px;
-    padding-bottom: 20px;
+  .section__productos .contenedorCategorias {
+    width: 100%;
   }
-  .contenedorSucursales {
+  .section__productos .contenedorCategorias .titulosSecciones {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding-top: 1rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .section__productos .contenedorDestacados {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -856,14 +1063,93 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
-  .contenedorSucursales h3 {
-    font-size: 10px;
-    letter-spacing: 2px;
-    font-family: 'Teko', sans-serif;
+  .section__productos .contenedorDestacados p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .section__productos .contenedorDestacados .productosDestacados {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 27rem;
+    overflow-y: scroll;
+  }
+  .section__productos .contenedorNovedades {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .contenedorCompraYenvios {
+    width: 100%;
+  }
+  /*S E C C I O N  C O N T A C T O*/
+  .section__contacto__form__maps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section__contacto__form__maps .contenedorFormulario {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 23rem;
+  }
+  .section__contacto__form__maps .maps iframe {
+    width: 350px;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  .section__contacto .contenedorSucursales {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    font-size: small;
+  }
+  /*S E C C I O N  Q U I E N E S   S O M O S*/
+  .somosUnaTienda p {
+    font-size: 1rem !important;
+  }
+  .instagram__cards {
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+  }
+  .instagram__cards .card {
+    margin-bottom: 3rem;
+  }
+  /*S E C C I O N  NEWSLETTER*/
+  .contenedorNovedades {
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -887,14 +1173,14 @@ html {
 
 .seccionPrincipalNosotros .titulosSecciones {
   color: black;
-  font-size: 1.90rem;
+  font-size: 1.9rem;
   letter-spacing: 4px;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   text-align: center;
-  height: 6.25rem;
+  height: 5rem;
   padding-top: 25px;
   padding-bottom: 25px;
-  background-color: #AC888A;
+  background-color: #ac888a;
 }
 
 .seccionPrincipalNosotros .contenedorParrafos {
@@ -927,13 +1213,13 @@ html {
   letter-spacing: 2px;
   color: black;
   text-align: center;
-  -webkit-transition: all .9s ease;
+  -webkit-transition: all 0.9s ease;
   /* Safari y Chrome */
-  -moz-transition: all .9s ease;
+  -moz-transition: all 0.9s ease;
   /* Firefox */
-  -o-transition: all .9s ease;
+  -o-transition: all 0.9s ease;
   /* IE 9 */
-  -ms-transition: all .9s ease;
+  -ms-transition: all 0.9s ease;
   /* Opera */
 }
 
@@ -965,13 +1251,13 @@ html {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-transition: all .9s ease;
+  -webkit-transition: all 0.9s ease;
   /* Safari y Chrome */
-  -moz-transition: all .9s ease;
+  -moz-transition: all 0.9s ease;
   /* Firefox */
-  -o-transition: all .9s ease;
+  -o-transition: all 0.9s ease;
   /* IE 9 */
-  -ms-transition: all .9s ease;
+  -ms-transition: all 0.9s ease;
   /* Opera */
 }
 
@@ -1038,7 +1324,7 @@ html {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   height: 5rem;
-  background-color: #AC888A;
+  background-color: #ac888a;
   width: 100%;
 }
 
@@ -1047,7 +1333,159 @@ html {
   color: black;
   font-size: 20px;
   letter-spacing: 2px;
-  font-family: 'Teko', sans-serif;
-  padding: 20px;
+  font-family: "Teko", sans-serif;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.seccionPrincipalNosotros .contenedorInformativoSalud .informativo a:hover {
+  -webkit-box-shadow: 0 0 0.2rem black;
+          box-shadow: 0 0 0.2rem black;
+}
+
+.section__newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f2f1;
+  width: 100%;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.section__newsletter .titulosSecciones {
+  color: black;
+  font-size: 1.9rem;
+  letter-spacing: 4px;
+  font-family: "Teko", sans-serif;
+  text-align: center;
+  height: 5rem;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #ac888a;
+}
+
+.section__newsletter .contenedorNovedades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+}
+
+.section__newsletter .contenedorNovedades .tituloNovedades {
+  font-size: 1.7rem;
+  font-family: "Roboto", sans-serif !important;
+  letter-spacing: 1px;
+  text-align: center;
+  color: black height 6rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.section__newsletter .contenedorNovedades .productosNovedades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90%;
+}
+
+.section__newsletter .contenedorNovedades .productosNovedades .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+  border: transparent;
+  border-radius: 1%;
+  -webkit-transition: all 0.9s ease;
+  /* Safari y Chrome */
+  -moz-transition: all 0.9s ease;
+  /* Firefox */
+  -o-transition: all 0.9s ease;
+  /* IE 9 */
+  -ms-transition: all 0.9s ease;
+  /* Opera */
+}
+
+.section__newsletter .contenedorNovedades .productosNovedades .card:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.section__newsletter__contenedor {
+  background-color: #ac888a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section__newsletter__contenedor__texto {
+  margin: 0.8rem;
+  text-align: center;
+}
+
+.section__newsletter__contenedor__input {
+  margin-bottom: 1rem;
+  background-color: #f5f2f1;
+}
+
+.section__newsletter__contenedor__input input {
+  background-color: #f5f2f1;
+  border: 1px solid transparent;
+}
+
+.section__newsletter__contenedor__input input:focus-visible {
+  outline: transparent;
+}
+
+.section__newsletter__contenedor__input button {
+  background-color: #f5f2f1;
+  border: 1px solid transparent;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,68 +1,68 @@
-@media (max-width: 575.98px){
- /* H E A D E R*/  
-    .header__menu{
-            
-        .contenedorLogoYelementos{
+@media (max-width: 575.98px) {
+    /* H E A D E R*/
+    .header__menu {
+        .contenedorLogoYelementos {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            padding-bottom: 0.5rem;              
-            
-            .contenedorLogo{
+            padding-bottom: 0.5rem;
+
+            .contenedorLogo {
                 width: 100%;
                 justify-content: center;
 
-                .logo{
+                .logo {
                     margin-top: 1rem;
                     border-radius: 4rem;
                     width: 100px;
                     margin-left: 10px;
-                }              
+                }
             }
-        }     
+        }
     }
 
     /*S E C C I O N  I N D E X*/
-    
-    .contenedorCategorias{
-       width: 100%;
 
-        .titulosSecciones{
-            font-size: 1rem;
+    .seccionProductosIndex {
+        .titulosSecciones {
+            font-size: 1.5rem !important;
             letter-spacing: 1px;
         }
     }
 
-    .categoriaProductos{
-    
-        img{
+    .categoriaProductos {
+        img {
             padding-bottom: 10px;
-            width: 15rem;
+            width: 20rem !important;
         }
-    }    
+    }
 
     /*S E C C I O N   P R O D U C T O S*/
-    .section__productos{
-        display: flex;
+    .section__productos {
         align-items: center;
 
-        .titulosSecciones{
-            font-size: 1rem;
-            letter-spacing: 1px;
-            padding-top: 1rem;
-            height: fit-content;  
+        .contenedorCategorias {
+            width: 100%;
+
+            .titulosSecciones {
+                font-size: 1rem;
+                letter-spacing: 1px;
+                padding-top: 1rem;
+                height: fit-content;
+            }
         }
-        
-        .contenedorDestacados{
+
+        .contenedorDestacados {
             display: flex;
             flex-direction: column;
             width: fit-content;
+            align-items: center;
 
-            p{
+            p {
                 display: flex;
             }
 
-            .productosDestacados{
+            .productosDestacados {
                 width: fit-content;
                 flex-direction: column;
                 height: 27rem;
@@ -70,54 +70,345 @@
             }
         }
 
-        .contenedorNovedades{
+        .contenedorNovedades {
             display: flex;
             flex-direction: column;
             width: fit-content;
-
-            
         }
     }
-    
-}
 
-@media (min-width: 576px) and (max-width: 767.98px) { 
-    
-    .titulosSecciones{
-        font-size: 30px;
-        letter-spacing: 3px ;
-        height: 50px;
-        padding-top: 20px;
+    .contenedorCompraYenvios {
+        width: 100%;
     }
 
-    .contenedorProductos{
-        display: flex;
+    /*S E C C I O N  C O N T A C T O*/
+
+    .section__contacto {
+        &__form__maps {
+            display: flex;
+            flex-direction: column;
+
+            .contenedorFormulario {
+                margin-left: 2rem;
+                margin-right: 2rem;
+                width: 23rem;
+            }
+
+            .maps {
+                iframe {
+                    width: 350px;
+                    height: 250px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .contenedorSucursales {
+            flex-direction: column;
+            padding-top: 1rem;
+            padding-right: 1rem;
+            align-items: flex-start;
+            font-size: small;
+        }
+    }
+    /*S E C C I O N  Q U I E N E S   S O M O S*/
+    .somosUnaTienda {
+        p {
+            font-size: 1rem !important;
+        }
+    }
+
+    .instagram__cards {
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+
+        .card {
+            margin-bottom: 3rem;
+        }
+    }
+    /*S E C C I O N  NEWSLETTER*/
+    .contenedorNovedades {
+        width: fit-content !important;
         flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
+    }
+}
 
-        padding-top: 50px;
-        padding-bottom: 80px;
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* H E A D E R*/
+    .header__menu {
+        .contenedorLogoYelementos {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-bottom: 0.5rem;
 
-        .categoriaProductos{
+            .contenedorLogo {
+                width: 100%;
+                justify-content: center;
 
-            img{
-                width: 15rem;    
-                border-radius: 30px;
-                padding-bottom: 20px;                       
+                .logo {
+                    margin-top: 1rem;
+                    border-radius: 4rem;
+                    width: 100px;
+                    margin-left: 10px;
+                }
             }
         }
     }
 
-    .contenedorSucursales{
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
+    /*S E C C I O N  I N D E X*/
 
-        h3{
-            font-size: 10px;
-            letter-spacing: 2px ;
-            font-family: 'Teko', sans-serif;   
+    .seccionProductosIndex {
+        .titulosSecciones {
+            font-size: 1.5rem;
+            letter-spacing: 1px;
         }
+    }
+
+    .contenedorProductos {
+        flex-direction: column;
+
+        .categoriaProductos {
+            img {
+                padding-bottom: 10px;
+                width: 15rem;
+            }
+        }
+    }
+
+    /*S E C C I O N   P R O D U C T O S*/
+    .section__productos {
+        display: flex;
+        align-items: center;
+
+        .contenedorCategorias {
+            width: 100%;
+
+            .titulosSecciones {
+                font-size: 1rem;
+                letter-spacing: 1px;
+                padding-top: 1rem;
+                height: fit-content;
+            }
+        }
+
+        .contenedorDestacados {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+
+            p {
+                display: flex;
+            }
+
+            .productosDestacados {
+                width: fit-content;
+                flex-direction: column;
+                height: 27rem;
+                overflow-y: scroll;
+            }
+        }
+
+        .contenedorNovedades {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+        }
+    }
+
+    .contenedorCompraYenvios {
+        width: 100%;
+    }
+
+    /*S E C C I O N  C O N T A C T O*/
+
+    .section__contacto {
+        &__form__maps {
+            display: flex;
+            flex-direction: column;
+
+            .contenedorFormulario {
+                margin-left: 2rem;
+                margin-right: 2rem;
+                width: 23rem;
+            }
+
+            .maps {
+                iframe {
+                    width: 350px;
+                    height: 250px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .contenedorSucursales {
+            flex-direction: column;
+            padding-top: 1rem;
+            padding-right: 1rem;
+            align-items: flex-start;
+            font-size: small;
+        }
+    }
+    /*S E C C I O N  Q U I E N E S   S O M O S*/
+    .somosUnaTienda {
+        p {
+            font-size: 1rem !important;
+        }
+    }
+
+    .instagram__cards {
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+
+        .card {
+            margin-bottom: 3rem;
+        }
+    }
+
+    /*S E C C I O N  NEWSLETTER*/
+    .contenedorNovedades {
+        width: fit-content !important;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* H E A D E R*/
+    .header__menu {
+        .contenedorLogoYelementos {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-bottom: 0.5rem;
+
+            .contenedorLogo {
+                width: 100%;
+                justify-content: center;
+
+                .logo {
+                    margin-top: 1rem;
+                    border-radius: 4rem;
+                    width: 100px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    /*S E C C I O N  I N D E X*/
+
+    .seccionProductosIndex {
+        .titulosSecciones {
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+    }
+
+    .contenedorProductos {
+        flex-direction: column;
+
+        .categoriaProductos {
+            img {
+                padding-bottom: 10px;
+                width: 16rem !important;
+            }
+        }
+    }
+
+    /*S E C C I O N   P R O D U C T O S*/
+    .section__productos {
+        display: flex;
+        align-items: center;
+
+        .contenedorCategorias {
+            width: 100%;
+
+            .titulosSecciones {
+                font-size: 1rem;
+                letter-spacing: 1px;
+                padding-top: 1rem;
+                height: fit-content;
+            }
+        }
+
+        .contenedorDestacados {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+
+            p {
+                display: flex;
+            }
+
+            .productosDestacados {
+                width: fit-content;
+                flex-direction: column;
+                height: 27rem;
+                overflow-y: scroll;
+            }
+        }
+
+        .contenedorNovedades {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+        }
+    }
+
+    .contenedorCompraYenvios {
+        width: 100%;
+    }
+
+    /*S E C C I O N  C O N T A C T O*/
+
+    .section__contacto {
+        &__form__maps {
+            display: flex;
+            flex-direction: column;
+
+            .contenedorFormulario {
+                margin-left: 2rem;
+                margin-right: 2rem;
+                width: 23rem;
+            }
+
+            .maps {
+                iframe {
+                    width: 350px;
+                    height: 250px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .contenedorSucursales {
+            flex-direction: column;
+            padding-top: 1rem;
+            padding-right: 1rem;
+            align-items: flex-start;
+            font-size: small;
+        }
+    }
+    /*S E C C I O N  Q U I E N E S   S O M O S*/
+    .somosUnaTienda {
+        p {
+            font-size: 1rem !important;
+        }
+    }
+
+    .instagram__cards {
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+
+        .card {
+            margin-bottom: 3rem;
+        }
+    }
+
+    /*S E C C I O N  NEWSLETTER*/
+    .contenedorNovedades {
+        width: fit-content !important;
+        flex-direction: column;
     }
 }

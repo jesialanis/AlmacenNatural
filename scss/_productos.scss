@@ -2,19 +2,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #f5f2f1;
+    background-color: $color-primario;
     width: 100%;
 
     .titulosSecciones {
-        color: black;
+        color: $color-terciario;
         font-size: 1.9rem;
         letter-spacing: 4px;
-        font-family: "Teko", sans-serif;
+        font-family: $fuente-titulos;
         text-align: center;
         height: 5rem;
         padding-top: 1.55rem;
         padding-bottom: 1.55rem;
-        background-color: #ac888a;
+        background-color: $color-secundario;
     }
 
     .categorias {
@@ -28,23 +28,23 @@
             font-family: "Teko", sans-serif;
 
             .btn-primary {
-                color: black;
-                background-color: #f5f2f1;
-                border-color: #ac888a;
+                color: $color-terciario;
+                background-color: $color-primario;
+                border-color: $color-secundario;
                 align-items: center;
-                font-family: "Teko", sans-serif;
+                font-family: $fuente-titulos;
                 letter-spacing: 2px;
                 font-size: 1rem;
             }
 
             .btn-primary:hover {
-                background-color: #ac888a;
+                background-color: $color-secundario;
                 border-color: #999999;
             }
 
             .btn-primary:focus {
-                color: black;
-                box-shadow: 0 0 0 0.25rem #dbc4c4;
+                color: $color-terciario;
+                box-shadow: 0 0 0 0.25rem $color-secundario;
             }
         }
 
@@ -72,10 +72,10 @@
 
         .tituloDestacados {
             font-size: 1.7rem;
-            font-family: $fuente-barra !important;
+            font-family: $fuente-body;
             letter-spacing: 1px;
             text-align: center;
-            color: black height 6rem;
+            color: $color-terciario height 6rem;
             padding-top: 2rem;
             padding-bottom: 2rem;
         }
@@ -99,7 +99,7 @@
                 font-family: "Teko", sans-serif;
                 letter-spacing: 2px;
                 margin: 1rem;
-                background-color: #f5f2f1 !important;
+                background-color: $color-primario;
                 border-radius: 1%;
 
                 img {
@@ -116,20 +116,20 @@
                     align-items: center;
 
                     h5 {
-                        font-family: $fuente-barra !important;
-                        color: #000000;
+                        font-family: $fuente-body;
+                        color: $color-terciario;
                         font-size: 15px;
                     }
 
                     .btn-primary {
-                        background-color: #f5f2f1 !important;
-                        border: solid #ac888a;
-                        color: black;
+                        background-color: $color-primario;
+                        border: solid $color-secundario;
+                        color: $color-terciario;
                     }
                 }
 
                 .btn-primary:hover {
-                    background-color: #ac888a;
+                    background-color: $color-secundario;
                     border-color: #dbc4c4;
                 }
 
@@ -147,12 +147,12 @@
         justify-content: space-evenly;
         align-items: center;
         height: 6rem;
-        background-color: #ac888a;
+        background-color: $color-primario;
 
         .compraYenvio {
             a {
                 text-decoration: none;
-                color: black;
+                color: $color-terciario;
                 font-size: 20px;
                 letter-spacing: 2px;
                 font-family: "Teko", sans-serif;
@@ -160,7 +160,7 @@
             }
 
             a:hover {
-                box-shadow: 0 0 0.2rem black;
+                box-shadow: 0 0 0.2rem $color-terciario;
             }
         }
     }

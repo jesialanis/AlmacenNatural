@@ -1,16 +1,16 @@
 .seccionProductosIndex {
-    background-color: #f5f2f1;
+    background-color: $color-primario;
 
     .titulosSecciones {
-        color: black;
+        color: $color-terciario;
         font-size: 1.9rem;
         letter-spacing: 4px;
-        font-family: "Teko", sans-serif;
+        font-family: $fuente-titulos;
         text-align: center;
         height: 5rem;
         padding-top: 25px;
         padding-bottom: 25px;
-        background-color: #ac888a;
+        background-color: $color-secundario;
     }
 
     .contenedorProductos {
@@ -49,21 +49,6 @@
         justify-content: space-evenly;
         align-items: center;
         height: 6rem;
-        background-color: #ac888a;
-
-        .compraYenvio {
-            a {
-                text-decoration: none;
-                color: black;
-                font-size: 1.25rem;
-                letter-spacing: 2px;
-                font-family: "Teko", sans-serif;
-                transition: all 1s;
-            }
-
-            a:hover {
-                box-shadow: 0 0 0.2rem black;
-            }
-        }
+        background-color: $color-secundario;
     }
 }

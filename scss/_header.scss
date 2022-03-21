@@ -1,7 +1,7 @@
 .header__menu {
     background-color: #dbc4c4;
     width: 100%;
-    border-bottom: solid 2px #ac888a;
+    border-bottom: solid 2px $color-secundario;
 
     .contenedorLogoYelementos {
         display: flex;
@@ -24,71 +24,71 @@
 
         .navbar {
             margin-bottom: 0.5rem;
-        }
 
-        .container-fluid {
-            background-color: #dbc4c4;
+            .container-fluid {
+                background-color: $color-detalles;
 
-            .collapse navbar-collapse {
-                padding-right: 30px;
-            }
-
-            .nav-link {
-                font-family: $fuente-barra !important;
-                font-weight: bold;
-                transition: all 1s;
-            }
-
-            .nav-link:hover {
-                box-shadow: 0 0 0.2rem #ac888a;
-            }
-
-            .dropdown-menu {
-                background-color: #f5f2f1;
-
-                .dropdown-item {
-                    background-color: #f5f2f1;
-                    font-family: $fuente-barra !important;
+                .nav-link {
+                    font-family: $fuente-body;
                     font-weight: bold;
-                    transition: all 0.5s;
+                    transition: all 1s;
+
+                    .nav-link:hover {
+                        box-shadow: 0 0 0.2rem $color-primario;
+                    }
                 }
 
-                .dropdown-item:hover {
-                    background-color: #ac888a;
+                .dropdown-menu {
+                    background-color: $color-primario;
+
+                    .dropdown-item {
+                        background-color: $color-primario;
+                        font-family: $fuente-body;
+                        font-weight: bold;
+                        transition: all 0.5s;
+                    }
+
+                    .dropdown-item:hover {
+                        background-color: $color-secundario;
+                    }
                 }
-            }
 
-            .form-control {
-                font-family: $fuente-barra !important;
-                font-weight: bold;
-                color: black;
-                border-right: 1rem;
-            }
+                .d-flex {
+                    margin-left: 10px !important;
 
-            .form-control:hover {
-                border-color: #ac888a;
-            }
+                    .form-control {
+                        font-family: $fuente-body;
+                        font-weight: bold;
+                        color: $color-terciario;
+                        border-right: 1rem;
+                    }
 
-            .form-control:focus {
-                color: black;
-                box-shadow: 0 0 0 0.25rem #ac888a;
-            }
+                    .form-control:hover {
+                        border-color: $color-secundario;
+                    }
 
-            .btn-outline-success {
-                background-color: #dbc4c4;
-                border-color: #ac888a;
-                color: black;
-            }
+                    .form-control:focus {
+                        color: $color-terciario;
+                        box-shadow: 0 0 0 0.25rem $color-secundario;
+                    }
 
-            .btn-outline-success:hover {
-                background-color: #dbc4c4;
-                border-color: #ac888a;
-                color: black;
-            }
+                    .btn-outline-success {
+                        background-color: #dbc4c4;
+                        border-color: $color-secundario;
+                        color: $color-terciario;
+                    }
 
-            .btn-outline-success:focus {
-                color: black;
-                box-shadow: 0 0 0 0.25rem #ac888a;
+                    .btn-outline-success:hover {
+                        background-color: #dbc4c4;
+                        border-color: $color-secundario;
+                        color: $color-terciario;
+                    }
+
+                    .btn-outline-success:focus {
+                        color: $color-terciario;
+                        box-shadow: 0 0 0 0.25rem $color-secundario;
+                    }
+                }
             }
         }
     }

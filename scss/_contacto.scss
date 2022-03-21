@@ -3,17 +3,17 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: stretch;
-    background-color: #f5f2f1;
+    background-color: $color-primario;
 
     .titulosSecciones {
-        color: black;
+        color: $color-terciario;
         font-size: 1.9rem;
         letter-spacing: 4px;
-        font-family: "Teko", sans-serif;
+        font-family: $fuente-titulos;
         text-align: center;
         height: 5rem;
         padding-top: 25px;
-        background-color: #ac888a;
+        background-color: $color-secundario;
     }
 
     &__form__maps {
@@ -29,9 +29,9 @@
             margin-top: 3rem;
             margin-left: 3rem;
             margin-bottom: 3rem;
-            background-color: #f5f2f1;
+            background-color: $color-primario;
             width: 25rem;
-            border: solid #ac888a 1px;
+            border: solid $color-secundario 1px;
             border-radius: 1%;
 
             .fieldset {
@@ -40,13 +40,13 @@
                 #legendContactanos {
                     font-size: 25px;
                     padding-bottom: 0.5rem;
-                    font-family: "Roboto", sans-serif;
-                    color: black;
+                    font-family: $fuente-body;
+                    color: $color-terciario;
                 }
 
                 .contacto {
                     border: 20px;
-                    font-family: "Roboto", sans-serif;
+                    font-family: $fuente-body;
                     font-weight: bold;
 
                     .contenedorCampos {
@@ -55,8 +55,8 @@
                         padding-bottom: 20px;
 
                         label {
-                            color: black;
-                            $fuente-barra: "Roboto", sans-serif;
+                            color: $color-terciario;
+                            font-family: $fuente-body;
                             letter-spacing: 4px;
                         }
 
@@ -66,8 +66,8 @@
                         select,
                         textarea {
                             border-radius: 5px;
-                            border: solid 1px #ac888a;
-                            color: #ac888a;
+                            border: solid 1px $color-primario;
+                            color: $color-primario;
                         }
                     }
 
@@ -80,10 +80,10 @@
                         padding-bottom: 20px;
 
                         .btn-light {
-                            background-color: #f5f2f1;
-                            border-color: #ac888a;
-                            color: #ac888a;
-                            font-family: "Teko", sans-serif;
+                            background-color: $color-primario;
+                            border-color: $color-secundario;
+                            color: $color-secundario;
+                            font-family: $fuente-titulos;
                         }
                     }
                 }
@@ -95,14 +95,14 @@
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        background-color: #ac888a;
+        background-color: $color-secundario;
         width: 100%;
         padding-top: 10px;
 
         h3 {
             font-size: 23px;
             letter-spacing: 4px;
-            font-family: "Teko", sans-serif;
+            font-family: $fuente-titulos;
             padding-left: 20px;
             padding-right: 20px;
         }
@@ -111,8 +111,8 @@
             padding-left: 22px;
 
             p {
-                color: black;
-                font-family: "Roboto", sans-serif;
+                color: $color-terciario;
+                font-family: $fuente-body;
                 font-weight: bold;
                 height: 100%;
             }

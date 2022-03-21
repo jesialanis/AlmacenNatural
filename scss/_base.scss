@@ -1,7 +1,16 @@
-$fuente-barra: 'Roboto', sans-serif; 
+/* FUENTE*/
+
+$fuente-body: 'Roboto', sans-serif; 
+$fuente-titulos: "Teko", sans-serif;
+
+/* COLORES*/
+$color-primario: #f5f2f1; 
+$color-secundario: #ac888a;
+$color-terciario: #000000;
+$color-detalles:  #dbc4c4;
 
 html{
-    font-family: 'Roboto', sans-serif; 
+    font-family: $fuente-body; 
     font-size: 15px;  
 }
 

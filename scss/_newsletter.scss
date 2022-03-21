@@ -1,10 +1,9 @@
 .section__newsletter {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #f5f2f1;
+    justify-content: center;
+    background-color: $color-primario;
     width: 100%;
-    align-items: stretch;
 
     .titulosSecciones {
         color: black;
@@ -20,7 +19,6 @@
 
     .contenedorNovedades {
         display: flex;
-        width: 85rem;
         height: fit-content;
         flex-direction: column;
         justify-content: center;
@@ -29,10 +27,10 @@
 
         .tituloNovedades {
             font-size: 1.7rem;
-            font-family: $fuente-barra !important;
+            font-family: $fuente-body;
             letter-spacing: 1px;
             text-align: center;
-            color: black height 6rem;
+            color: $color-terciario height 6rem;
             padding-top: 2rem;
             padding-bottom: 2rem;
         }
@@ -69,7 +67,7 @@
     }
 
     &__contenedor {
-        background-color: #ac888a;
+        background-color: $color-detalles;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -81,10 +79,10 @@
 
         &__input {
             margin-bottom: 1rem;
-            background-color: #f5f2f1;
+            background-color: $color-primario;
 
             input {
-                background-color: #f5f2f1;
+                background-color: $color-primario;
                 border: 1px solid transparent;
             }
             input:focus-visible {
@@ -92,7 +90,7 @@
             }
 
             button {
-                background-color: #f5f2f1;
+                background-color: $color-primario;
                 border: 1px solid transparent;
             }
         }

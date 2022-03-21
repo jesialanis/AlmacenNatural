@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #dbc4c4;
+    background-color: $color-secundario;
     width: 100%;
     margin-top: 0%px;
     padding: 20px;
@@ -12,21 +12,21 @@
     .seguinosRedes {
         h5 {
             letter-spacing: 4px;
-            font-family: "Teko", sans-serif;
+            font-family: $fuente-titulos;
             text-align: center;
         }
     }
 
     .redes {
-        img {
+        svg {
             padding: 10px;
             width: 40px;
             height: 40px;
             transition: all 0.8s;
         }
 
-        img:hover {
-            box-shadow: 0 0 0.2rem #ac888a;
+        svg:hover {
+            box-shadow: 0 0 0.2rem $color-secundario;
         }
     }
 
@@ -35,7 +35,7 @@
         flex-direction: row;
         margin-top: 1rem;
         border-top: 1rem;
-        border-top: solid 1px #ac888a;
+        border-top: solid 1px $color-secundario;
         align-items: center;
 
         .imgTarjetas {
